@@ -1,4 +1,5 @@
 // Countdown bis zum 03.03.2026 mit Raketenanimation
+// Countdown bis zum 03.03.2026
 function updateCountdown() {
     const countdownElement = document.getElementById("countdown");
     const rocketElement = document.getElementById("rocket");
@@ -22,3 +23,19 @@ function updateCountdown() {
 
 setInterval(updateCountdown, 1000);
 updateCountdown();
+
+// Scroll-Fade-In Effekt
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
+    });
+});
+
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+// Mobile Nav Toggle
+document.getElementById("nav-toggle").addEventListener("click", () => {
+    document.querySelector("nav ul").classList.toggle("show");
+});
