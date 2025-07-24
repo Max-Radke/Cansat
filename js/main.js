@@ -1,4 +1,3 @@
-// Countdown bis zum 03.03.2026 mit Raketenanimation
 // Countdown bis zum 03.03.2026
 function updateCountdown() {
     const countdownElement = document.getElementById("countdown");
