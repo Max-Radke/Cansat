@@ -5,13 +5,17 @@
     <title>CanSat Team 2025/26</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <header>
-    <img src="images/logo.png" alt="Logo" style="height: 120px; margin-bottom: 10px;">
-    <h1>CanSat Team 2025/26</h1>
-    <nav>
+    <div class="logo-nav">
+        <img src="images/logo.png" alt="CanSat Logo" class="logo">
+        <h1>CanSat Team 2025/26</h1>
+        <button id="nav-toggle" aria-label="Menü umschalten">☰</button>
+    </div>
+    <nav id="main-nav">
         <ul>
             <li><a href="index.html">Start</a></li>
             <li><a href="about.html">Projekt</a></li>
@@ -26,19 +30,19 @@
 
 <main>
 
-    <section class="countdown-section">
+    <section class="countdown-section fade-in">
         <h2>Countdown bis zum Raketenstart</h2>
         <p id="countdown">Wird geladen...</p>
         <div id="rocket">🚀</div>
     </section>
 
-    <section class="hero">
+    <section class="hero fade-in">
         <h2>Willkommen bei unserem CanSat-Projekt</h2>
-        <p>Wir sind ein Schülerteam, das im Rahmen des Deutschen CanSat-Wettbewerbs 2025/26 einen Minisatelliten baut und startet.</p>
+        <p>Wir sind das CanSat Team 2025/26 – ein Schülerteam, das im Rahmen des Deutschen CanSat-Wettbewerbs 2025/26 einen Minisatelliten baut und startet.</p>
         <img src="images/test1.jpg" alt="Teamfoto unseres CanSat-Projekts">
     </section>
 
-    <section class="info">
+    <section class="info fade-in">
         <h3>Worum geht es?</h3>
         <p>Ein CanSat ist ein Miniatursatellit in der Größe einer Getränkedose. Unsere Mission: Messdaten sammeln, mit Funk übertragen und eigene Experimente durchführen – mit echter Raumfahrttechnik im Kleinformat.</p>
     </section>
@@ -46,7 +50,7 @@
 </main>
 
 <footer>
-    <p>&copy; 2025/26 CanSat Team – alle Rechte vorbehalten</p>
+    <p>&copy; 2025 CanSat Team 2025/26 – alle Rechte vorbehalten</p>
 </footer>
 
 <script src="js/main.js"></script>
