@@ -2,37 +2,56 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>Kontakt</title>
+    <title>Kontakt – CanSat 2025/26</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
 <header>
-    <h1>Kontakt & Sponsoring</h1>
-    <nav>
+    <div class="logo-nav">
+        <img src="images/logo.png" alt="CanSat Logo" class="logo">
+        <h1>CanSat Team 2025/26</h1>
+        <button id="nav-toggle">☰</button>
+    </div>
+    <nav id="main-nav">
         <ul>
             <li><a href="index.html">Start</a></li>
             <li><a href="about.html">Projekt</a></li>
             <li><a href="team.html">Team</a></li>
             <li><a href="mission.html">Mission</a></li>
             <li><a href="progress.html">Fortschritt</a></li>
-            <li><a href="contact.html">Kontakt</a></li>
+            <li><a href="gallery.html">Galerie</a></li>
+            <li><a href="contact.html" class="active">Kontakt</a></li>
         </ul>
     </nav>
 </header>
 
 <main>
-    <h2>So erreicht man uns</h2>
-    <p>📧 E-Mail: <a href="john@kgs-seebad-ahlbeck.de">john@kgs-seebad-ahlbeck.de</a></p>
-    <p>📍 Schule: Europäische Gesamtschule Insel Usedom</p>
+    <section class="fade-in">
+        <h2>Kontakt</h2>
+        <p>Ihr möchtet mit uns Kontakt aufnehmen? Schreibt uns eine Nachricht über das Formular unten:</p>
 
-    <h3>Sponsoren</h3>
-    <p>Wir freuen uns über jede Unterstützung! Schreiben Sie uns einfach an.</p>
+        <form action="mailto:john@kgs-seebad-ahlbeck.de" method="post" enctype="text/plain">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">E-Mail:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="nachricht">Nachricht:</label><br>
+            <textarea id="nachricht" name="nachricht" rows="6" required></textarea><br><br>
+
+            <button type="submit">Senden</button>
+        </form>
+
+        <p>Oder schreibt direkt an unseren Betreuer: <strong>john@kgs-seebad-ahlbeck.de</strong></p>
+    </section>
 </main>
 
 <footer>
-    <p>&copy; 2025/26 CanSat Team</p>
+    <p>&copy; 2025 CanSat Team 2025/26 – alle Rechte vorbehalten</p>
 </footer>
 
+<script src="js/main.js"></script>
 </body>
 </html>
