@@ -2,36 +2,49 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>Unsere Mission</title>
+    <title>Mission – CanSat 2025/26</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
 <header>
-    <h1>Unsere Mission</h1>
-    <nav>
+    <div class="logo-nav">
+        <img src="images/logo.png" alt="CanSat Logo" class="logo">
+        <h1>CanSat Team 2025/26</h1>
+        <button id="nav-toggle">☰</button>
+    </div>
+    <nav id="main-nav">
         <ul>
             <li><a href="index.html">Start</a></li>
             <li><a href="about.html">Projekt</a></li>
             <li><a href="team.html">Team</a></li>
-            <li><a href="mission.html">Mission</a></li>
+            <li><a href="mission.html" class="active">Mission</a></li>
             <li><a href="progress.html">Fortschritt</a></li>
+            <li><a href="gallery.html">Galerie</a></li>
             <li><a href="contact.html">Kontakt</a></li>
         </ul>
     </nav>
 </header>
 
 <main>
-    <h2>Primärmission</h2>
-    <p>Unser CanSat misst während des Sinkflugs den Luftdruck und die Temperatur. Diese Daten werden per Funk an unsere Bodenstation gesendet. Daraus erstellen wir ein Höhenprofil und berechnen die Fallgeschwindigkeit.</p>
+    <section class="fade-in">
+        <h2>Unsere Mission</h2>
 
-    <h2>Sekundärmission</h2>
-    <p>[Ergänzt]</p>
+        <h3>Primärmission (Pflicht)</h3>
+        <p>Unser CanSat misst während des Falls kontinuierlich Luftdruck und Temperatur, um daraus die Flughöhe und das Temperaturprofil der Atmosphäre zu berechnen.</p>
+
+        <h3>Sekundärmission (frei wählbar)</h3>
+        <p>Unsere sekundäre Mission untersucht den Zusammenhang zwischen Fallgeschwindigkeit und Luftfeuchtigkeit. Zusätzlich entwickeln wir ein System zur aktiven Stabilisierung mithilfe von ausfahrbaren Flügeln.</p>
+
+        <h3>Zielsetzung</h3>
+        <p>Ziel ist es, einen möglichst präzisen und robusten CanSat zu bauen, der zuverlässig Messdaten sammelt, überträgt und bei der Landung funktionsfähig bleibt. Die Ergebnisse wollen wir in einem wissenschaftlichen Bericht präsentieren.</p>
+    </section>
 </main>
 
 <footer>
-    <p>&copy; 2025/26 CanSat Team</p>
+    <p>&copy; 2025 CanSat Team 2025/26 – alle Rechte vorbehalten</p>
 </footer>
 
+<script src="js/main.js"></script>
 </body>
 </html>
