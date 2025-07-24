@@ -146,9 +146,16 @@ footer {
 
 .gallery img {
     width: 100%;
-    height: auto;
+    max-height: 400px;
+    object-fit: cover;
     display: block;
-    border: 1px solid #ccc;
-    border-radius: 6px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
     background-color: white;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.gallery img:hover {
+    transform: scale(1.02);
 }
