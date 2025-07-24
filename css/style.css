@@ -1,83 +1,90 @@
+/* Allgemeines Layout */
 body {
     margin: 0;
-    font-family: 'Roboto', sans-serif;
-    background-color: #f4f7fb;
-    color: #222;
-    line-height: 1.6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-/* Header */
+/* Header und Navigation */
 header {
     background-color: #003366;
     color: white;
-    padding: 1rem;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    padding: 1.5rem 0;
+    text-align: center;
 }
 
-.logo-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.logo {
-    height: 50px;
-}
-
-#nav-toggle {
-    background: none;
-    border: none;
-    font-size: 1.8rem;
-    color: white;
-    display: none;
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
 }
 
 nav ul {
-    display: flex;
     list-style: none;
+    display: flex;
     justify-content: center;
     gap: 1.5rem;
+    margin-top: 1rem;
     padding: 0;
-    margin: 1rem 0 0 0;
-    flex-wrap: wrap;
 }
 
 nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    transition: 0.3s;
 }
 
 nav a:hover {
     text-decoration: underline;
 }
 
-/* Main */
+/* Hauptinhalt */
 main {
     max-width: 1000px;
     margin: auto;
     padding: 2rem;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    margin-top: 2rem;
 }
 
-/* Hero Section */
+/* Hero-Bereich */
+.hero {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
 .hero img {
     max-width: 100%;
-    border-radius: 12px;
+    height: auto;
     margin-top: 1rem;
-    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    border-radius: 12px;
 }
 
-/* Countdown */
+/* Info-Bereich */
+.info {
+    margin-top: 2rem;
+}
+
+/* Footer */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 3rem;
+}
+
+/* Countdown Style */
 .countdown-section {
     text-align: center;
     background-color: #e6f2ff;
     padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
     margin-bottom: 2rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 #countdown {
@@ -93,6 +100,7 @@ main {
     display: inline-block;
 }
 
+/* Raketenstart-Animation */
 .launch {
     animation: fly 2s forwards;
 }
@@ -108,104 +116,22 @@ main {
     }
 }
 
-/* Team Page */
-.team-grid {
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 2rem;
-}
-
-.member {
-    text-align: center;
-    max-width: 200px;
-}
-
-.member img {
-    width: 100%;
-    border-radius: 50%;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-/* Galerie */
-.gallery {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.gallery img {
-    width: 200px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    transition: transform 0.3s ease;
-}
-
-.gallery img:hover {
-    transform: scale(1.05);
-}
-
-/* Timeline */
-.timeline {
-    list-style: none;
-    padding-left: 1rem;
-}
-
-.timeline li {
-    margin: 1rem 0;
-    padding-left: 1rem;
-    border-left: 3px solid #003366;
-    position: relative;
-}
-
-.timeline li::before {
-    content: \"🚩\";
-    position: absolute;
-    left: -1.2rem;
-}
-
-/* Footer */
-footer {
-    background-color: #003366;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 3rem;
-}
-
-/* Fade-in Animation */
-.fade-in {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 1s ease, transform 1s ease;
-}
-
-.fade-in.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* Mobile Navigation */
+/* Responsive */
 @media (max-width: 768px) {
     nav ul {
-        display: none;
         flex-direction: column;
-        background-color: #003366;
+        align-items: center;
+    }
+
+    main {
         padding: 1rem;
     }
 
-    nav ul.show {
-        display: flex;
-    }
-
-    #nav-toggle {
-        display: block;
-    }
-
     header h1 {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
+    }
+
+    nav a {
+        font-size: 1rem;
     }
 }
-
