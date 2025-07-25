@@ -3,7 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <title>Galerie</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-grid img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Lightbox-Stil */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 80%;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(255,255,255,0.3);
+        }
+
+        .lightbox:target {
+            display: flex;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: white;
+            font-size: 30px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
 
@@ -16,7 +74,7 @@
             <li><a href="team.html">Team</a></li>
             <li><a href="mission.html">Mission</a></li>
             <li><a href="progress.html">Fortschritt</a></li>
-            <li><a href="gallery.html">Galerie</a></li>
+            <li><a href="gallery.html" class="active">Galerie</a></li>
             <li><a href="contact.html">Kontakt</a></li>
         </ul>
     </nav>
@@ -24,11 +82,27 @@
 
 <main>
     <h2>Unsere Bilder</h2>
+    <p>Klicke auf ein Bild, um es zu vergrößern.</p>
     <div class="gallery-grid">
-        <img src="images/test1.jpg" alt="DLR">
+        <a href="#img1"><img src="images/test1.jpg" alt="DLR"></a>
+        <a href="#img2"><img src="images/logo.png" alt="Logo"></a>
+        <a href="#img3"><img src="images/schule.jpg" alt="Schule"></a>
+    </div>
+
+    <!-- Lightbox-Bilder -->
+    <div id="img1" class="lightbox">
+        <a href="#" class="close-btn">&times;</a>
+        <img src="images/gruppenbild.JPEG" alt="DLR">
+    </div>
+
+    <div id="img2" class="lightbox">
+        <a href="#" class="close-btn">&times;</a>
         <img src="images/logo.png" alt="Logo">
+    </div>
+
+    <div id="img3" class="lightbox">
+        <a href="#" class="close-btn">&times;</a>
         <img src="images/schule.jpg" alt="Schule">
-        <!-- Weitere Bilder -->
     </div>
 </main>
 
