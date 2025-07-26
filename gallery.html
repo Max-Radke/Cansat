@@ -1,67 +1,81 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <title>Galerie</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <style>
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            padding: 20px;
-        }
+  <meta charset="UTF-8">
+  <title>Galerie – DeltaV Team</title>
 
-        .gallery-grid img {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            cursor: pointer;
-            transition: transform 0.3s ease;
-        }
+  <!-- Metadaten für SEO und Social Media -->
+  <meta name="description" content="Galerie des DeltaV-Teams – Eindrücke aus unserem CanSat-Projekt 2025/26.">
+  <meta name="keywords" content="DeltaV, CanSat, Galerie, Schülerprojekt, Raumfahrt, Minisatellit">
+  <meta property="og:title" content="Galerie – DeltaV Team">
+  <meta property="og:description" content="Bilder und Eindrücke vom DeltaV CanSat-Team 2025/26.">
+  <meta property="og:image" content="https://www.deltav-team.de/images/deltav.jpg">
+  <meta property="og:url" content="https://www.deltav-team.de/gallery.html">
+  <meta property="og:type" content="website">
 
-        .gallery-grid img:hover {
-            transform: scale(1.05);
-        }
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="apple-touch-icon" href="images/favicon.png">
 
-        /* Lightbox-Stil */
-        .lightbox {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0,0,0,0.8);
-            justify-content: center;
-            align-items: center;
-            z-index: 1000;
-        }
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
 
-        .lightbox img {
-            max-width: 90%;
-            max-height: 80%;
-            border-radius: 8px;
-            box-shadow: 0 0 20px rgba(255,255,255,0.3);
-        }
+  <style>
+      .gallery-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+          gap: 20px;
+          padding: 20px;
+      }
 
-        .lightbox:target {
-            display: flex;
-        }
+      .gallery-grid img {
+          width: 100%;
+          height: auto;
+          object-fit: cover;
+          border-radius: 8px;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+          cursor: pointer;
+          transition: transform 0.3s ease;
+      }
 
-        .close-btn {
-            position: absolute;
-            top: 20px;
-            right: 30px;
-            color: white;
-            font-size: 30px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-    </style>
+      .gallery-grid img:hover {
+          transform: scale(1.05);
+      }
+
+      .lightbox {
+          display: none;
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0,0,0,0.8);
+          justify-content: center;
+          align-items: center;
+          z-index: 1000;
+      }
+
+      .lightbox img {
+          max-width: 90%;
+          max-height: 80%;
+          border-radius: 8px;
+          box-shadow: 0 0 20px rgba(255,255,255,0.3);
+      }
+
+      .lightbox:target {
+          display: flex;
+      }
+
+      .close-btn {
+          position: absolute;
+          top: 20px;
+          right: 30px;
+          color: white;
+          font-size: 30px;
+          text-decoration: none;
+          font-weight: bold;
+      }
+  </style>
 </head>
 <body>
 
