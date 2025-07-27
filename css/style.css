@@ -159,3 +159,15 @@ footer {
 .gallery img:hover {
     transform: scale(1.02);
 }
+
+.social-icons a {
+  margin: 0 8px;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.social-icons img {
+  height: 24px;
+  width: 24px;
+  vertical-align: middle;
+}
