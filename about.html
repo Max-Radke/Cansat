@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>DeltaV – CanSat Team 2025/26</title>
   <meta name="description" content="DeltaV ist ein Schülerteam der EGS Seebad Ahlbeck und nimmt am Deutschen CanSat-Wettbewerb 2025/26 teil. Wir entwickeln einen Minisatelliten und erforschen die Atmosphäre.">
-  <meta name="keywords" content="DeltaV, CanSat, Schülerprojekt, Minisatellit, Raumfahrt, KGS Seebad Ahlbeck, Wettbewerb 2025">
+  <meta name="keywords" content="DeltaV, CanSat, Schülerprojekt, Minisatellit, Raumfahrt, Europäische Gesamtschule Insel Usedom, Wettbewerb 2025">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Open Graph für Social Media -->
@@ -18,67 +18,265 @@
   <link rel="icon" type="image/png" href="images/favicon.png">
   <link rel="apple-touch-icon" href="images/favicon.png">
   <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap');
+    
+    body {
+      font-family: 'Roboto', sans-serif;
+      color: #333333;
+      line-height: 1.6;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+    }
+
+    .content-section {
+      background: #f8f9fa;
+      padding: 40px 30px;
+      margin: 30px 0;
+      border-radius: 8px;
+      border-left: 4px solid #06b6d4;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    .content-section h2 {
+      color: #0a192f;
+      font-size: 2.2em;
+      margin-bottom: 25px;
+      text-align: center;
+    }
+
+    .content-section p {
+      font-size: 1.1em;
+      line-height: 1.7;
+      color: #333333;
+      margin-bottom: 20px;
+    }
+
+    .content-section ul {
+      background: white;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      margin: 20px 0;
+    }
+
+    .content-section li {
+      margin-bottom: 10px;
+      color: #333333;
+    }
+
+    .highlight-box {
+      background: #0a192f;
+      color: white;
+      padding: 30px;
+      border-radius: 8px;
+      margin: 25px 0;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .highlight-box h3 {
+      color: white;
+      margin-bottom: 15px;
+      font-size: 1.5em;
+    }
+
+    .highlight-box ul {
+      background: rgba(255,255,255,0.1);
+      padding: 20px;
+      border-radius: 6px;
+      list-style: none;
+    }
+
+    .highlight-box li {
+      padding: 8px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.2);
+      color: white;
+    }
+
+    .highlight-box li:last-child {
+      border-bottom: none;
+    }
+
+    .highlight-box li::before {
+      content: "✓ ";
+      color: #f97316;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .content-section {
+        padding: 25px;
+        margin: 20px 0;
+      }
+      
+      .content-section h2 {
+        font-size: 1.8em;
+      }
+    }
+  </style>
 </head>
 <body>
 
-<header>
-  <div style="text-align:center;">
-    <h1 style="margin-bottom:10px;">DeltaV – CanSat Team 2025/26</h1>
-    <div style="display:flex; justify-content:center; gap:20px; flex-wrap:wrap;">
-      <img src="images/logo.png" alt="CanSat Logo" style="height:80px;">
-      <img src="images/deltav.jpg" alt="DeltaV Logo" style="height:80px;">
+<header style="background: #0a192f; color: white; padding: 30px 0; margin-bottom: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+  <div style="text-align:center; max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+    <h1 style="margin-bottom:20px; font-size: 2.5em; color: white; font-family: 'Montserrat', sans-serif;">🚀 DeltaV – CanSat Team 2025/26</h1>
+    <div style="display:flex; justify-content:center; gap:30px; flex-wrap:wrap; margin-bottom: 25px;">
+      <img src="images/logo.png" alt="CanSat Logo" style="height:80px; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">
+      <img src="images/deltav.jpg" alt="DeltaV Logo" style="height:80px; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">
     </div>
   </div>
 
-  <nav>
-    <ul>
-      <li><a href="index.html">Start</a></li>
-      <li><a href="about.html">Projekt</a></li>
-      <li><a href="team.html">Team</a></li>
-      <li><a href="mission.html">Mission</a></li>
-      <li><a href="progress.html">Fortschritt</a></li>
-      <li><a href="gallery.html">Galerie</a></li>
-      <li><a href="contact.html">Kontakt</a></li>
-      <li><a href="rechtliches.html">Rechtliches</a></li>
+  <nav style="background: rgba(255,255,255,0.05); border-radius: 8px; margin: 0 auto; max-width: 1000px; padding: 15px 20px;">
+    <ul style="display: flex; justify-content: center; flex-wrap: wrap; gap: 15px; list-style: none; margin: 0; padding: 0;">
+      <li><a href="index.html" style="color: white; text-decoration: none; padding: 10px 20px; border-radius: 6px; transition: all 0.3s ease; background: rgba(255,255,255,0.1);">🏠 Start</a></li>
+      <li><a href="about.html" style="color: white; text-decoration: none; padding: 10px 20px; border-radius: 6px; transition: all 0.3s ease; background: rgba(255,255,255,0.1);">🚀 Projekt</a></li>
+      <li><a href="team.html" style="color: white; text-decoration: none; padding: 10px 20px; border-radius: 6px; transition: all 0.3s ease; background: rgba(255,255,255,0.1);">👥 Team</a></li>
+      <li><a href="mission.html" style="color: white; text-decoration: none; padding: 10px 20px; border-radius: 6px; transition: all 0.3s ease; background: rgba(255,255,255,0.1);">🎯 Mission</a></li>
+      <li><a href="progress.html" style="color: white; text-decoration: none; padding: 10px 20px; border-radius: 6px; transition: all 0.3s ease; background: rgba(255,255,255,0.1);">📈 Fortschritt</a></li>
+      <li><a href="gallery.html" style="color: white; text-decoration: none; padding: 10px 20px; border-radius: 6px; transition: all 0.3s ease; background: rgba(255,255,255,0.1);">📸 Galerie</a></li>
+      <li><a href="contact.html" style="color: white; text-decoration: none; padding: 10px 20px; border-radius: 6px; transition: all 0.3s ease; background: rgba(255,255,255,0.1);">📞 Kontakt</a></li>
+      <li><a href="sponsors.html" style="color: white; text-decoration: none; padding: 10px 20px; border-radius: 6px; transition: all 0.3s ease; background: rgba(255,255,255,0.1);">🤝 Sponsoren</a></li>
+      <li><a href="rechtliches.html" style="color: white; text-decoration: none; padding: 10px 20px; border-radius: 6px; transition: all 0.3s ease; background: rgba(255,255,255,0.1);">⚖️ Rechtliches</a></li>
     </ul>
   </nav>
 </header>
 
+<style>
+  nav a:hover {
+    background: #f97316 !important;
+    color: white !important;
+    transform: translateY(-1px);
+  }
+  
+  @media (max-width: 768px) {
+    header h1 { font-size: 2em !important; }
+    nav ul { flex-direction: column; align-items: center; }
+    nav a { margin: 5px 0; }
+  }
+</style>
+
 <main>
-    <h2>Was ist ein CanSat?</h2>
-    <p>Ein CanSat ist ein kleiner Satellit in der Größe einer Getränkedose, der mit einer Rakete auf ca. 700 m Höhe gebracht wird und beim Sinkflug Messungen durchführt.</p>
+    <div class="content-section">
+        <h2>🚀 Was ist ein CanSat?</h2>
+        <p>Ein CanSat ist ein kleiner Satellit in der Größe einer Getränkedose, der mit einer Rakete auf ca. 700 m Höhe gebracht wird und beim Sinkflug Messungen durchführt. Diese Miniatursatelliten ermöglichen es Schülern, echte Raumfahrttechnik zu erleben und wissenschaftliche Experimente durchzuführen.</p>
+        
+        <p>Der Name "CanSat" setzt sich aus "Can" (Dose) und "Sat" (Satellit) zusammen und beschreibt perfekt die Größe und Form unseres Projekts.</p>
+    </div>
 
-    <h2>Unser Ziel</h2>
-    <p>Wir nehmen am CanSat-Wettbewerb 2025/26 teil, bei dem wir einen funktionierenden Mini-Satelliten bauen und testen. Dabei lernen wir, wie echte Raumfahrtmissionen geplant und durchgeführt werden.</p>
+    <div class="content-section">
+        <h2>🎯 Unser Ziel</h2>
+        <p>Als Schülerteam der Europäischen Gesamtschule Insel Usedom nehmen wir am Deutschen CanSat-Wettbewerb 2025/26 teil. Unser Ziel ist es, einen funktionsfähigen CanSat zu entwickeln, der:</p>
+        
+        <ul>
+            <li>Atmosphärische Daten während des Fluges sammelt</li>
+            <li>Diese Daten an eine Bodenstation überträgt</li>
+            <li>Eine Sekundärmission erfüllt (die wir selbst entwickeln)</li>
+            <li>Sicher zur Erde zurückkehrt</li>
+        </ul>
+    </div>
 
-    <h2>Wettbewerbsphasen</h2>
-    <ul>
-        <li>Idee & Bewerbung</li>
-        <li>Technische Umsetzung & Tests</li>
-        <li>Startkampagne in Bremen</li>
-    </ul>
+    <div class="highlight-box">
+        <h3>🏆 Wettbewerbsphasen</h3>
+        <ul>
+            <li><strong>Phase 1:</strong> Konzeptentwicklung und Bewerbung</li>
+            <li><strong>Phase 2:</strong> Bau und Test des CanSat</li>
+            <li><strong>Phase 3:</strong> Raketenstart und Datensammlung</li>
+            <li><strong>Phase 4:</strong> Auswertung und Präsentation</li>
+        </ul>
+    </div>
+
+    <div class="content-section">
+        <h2>🔬 Wissenschaftlicher Hintergrund</h2>
+        <p>Unser CanSat wird verschiedene Sensoren enthalten, um wichtige atmosphärische Parameter zu messen:</p>
+        
+        <ul>
+            <li><strong>Temperatur:</strong> Messung der Lufttemperatur in verschiedenen Höhen</li>
+            <li><strong>Luftdruck:</strong> Bestimmung des Luftdrucks während des Fluges</li>
+            <li><strong>Feuchtigkeit:</strong> Erfassung der Luftfeuchtigkeit</li>
+            <li><strong>GPS:</strong> Positionsbestimmung und Flugbahnverfolgung</li>
+        </ul>
+        
+        <p>Diese Daten helfen uns, die Atmosphäre besser zu verstehen und liefern wertvolle Erkenntnisse für die Wissenschaft.</p>
+    </div>
+
+    <div class="content-section">
+        <h2>🚀 Technische Herausforderungen</h2>
+        <p>Die Entwicklung eines CanSat stellt uns vor verschiedene technische Herausforderungen:</p>
+        
+        <ul>
+            <li>Entwicklung einer robusten Elektronik, die den Raketenstart übersteht</li>
+            <li>Programmierung der Sensoren und Datenübertragung</li>
+            <li>Konstruktion einer stabilen Hülle</li>
+            <li>Implementierung eines Fallschirmsystems</li>
+            <li>Erstellung einer Bodenstation zur Datenempfang</li>
+        </ul>
+    </div>
 </main>
 
-<footer>
-  <style>
-    footer a { color: inherit; text-decoration: none; }
-    footer a:hover { opacity: 0.7; }
-  </style>
-
-  <p>&copy; 2025 DeltaV Team – alle Rechte vorbehalten</p>
-  <div class="social-icons">
-    <a href="https://www.instagram.com/delta_v_team" target="_blank">
-      <img src="images/instagram_icon(1).png" alt="Instagram">
-    </a>
-    <a href="https://www.tiktok.com/@delta_v_team" target="_blank">
-      <img src="images/tiktok_icon.png" alt="TikTok">
-    </a>
-    <a href="mailto:info@deltav-team.de">
-      <img src="images/gmail_icon.png" alt="E-Mail">
-    </a>
-    <a href="rechtliches.html">Impressum & Datenschutz</a>
+<footer style="background: #0a192f; color: #cccccc; padding: 40px 20px; margin-top: 50px;">
+  <div style="max-width: 1200px; margin: 0 auto;">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-bottom: 30px;">
+      
+      <!-- Links: Rechtliches -->
+      <div>
+        <h4 style="color: white; margin-bottom: 15px; font-family: 'Montserrat', sans-serif;">Rechtliches</h4>
+        <ul style="list-style: none; padding: 0; margin: 0;">
+          <li style="margin-bottom: 8px;"><a href="rechtliches.html" style="color: #cccccc; text-decoration: none; transition: color 0.3s ease;">Impressum</a></li>
+          <li style="margin-bottom: 8px;"><a href="rechtliches.html" style="color: #cccccc; text-decoration: none; transition: color 0.3s ease;">Datenschutz</a></li>
+          <li style="margin-bottom: 8px;"><a href="contact.html" style="color: #cccccc; text-decoration: none; transition: color 0.3s ease;">Kontakt</a></li>
+        </ul>
+      </div>
+      
+      <!-- Mitte: Social Media -->
+      <div style="text-align: center;">
+        <h4 style="color: white; margin-bottom: 15px; font-family: 'Montserrat', sans-serif;">Folgen Sie uns</h4>
+        <div style="display: flex; justify-content: center; gap: 20px; margin-bottom: 15px;">
+          <a href="https://www.instagram.com/delta_v_team/" target="_blank" style="color: #cccccc; text-decoration: none; font-size: 1.5em; transition: all 0.3s ease;" title="Instagram">📷</a>
+          <a href="https://www.tiktok.com/@delta_v_team" target="_blank" style="color: #cccccc; text-decoration: none; font-size: 1.5em; transition: all 0.3s ease;" title="TikTok">🎵</a>
+          <a href="mailto:info@deltav-team.de" style="color: #cccccc; text-decoration: none; font-size: 1.5em; transition: all 0.3s ease;" title="E-Mail">📧</a>
+        </div>
+        <p style="margin: 0; font-size: 0.9em; color: #999;">info@deltav-team.de</p>
+      </div>
+      
+      <!-- Rechts: Sponsoren -->
+      <div>
+        <h4 style="color: white; margin-bottom: 15px; font-family: 'Montserrat', sans-serif;">Unsere Partner</h4>
+        <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 6px; text-align: center;">
+          <p style="margin: 0; color: #999; font-size: 0.9em;">Sponsoren-Logos werden hier angezeigt</p>
+          <a href="sponsors.html" style="color: #06b6d4; text-decoration: none; font-size: 0.9em; margin-top: 10px; display: inline-block;">Partner werden</a>
+        </div>
+      </div>
+    </div>
+    
+    <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; text-align: center;">
+      <p style="margin: 0; color: #999; font-size: 0.9em;">© 2025 DeltaV CanSat Team. Alle Rechte vorbehalten.</p>
+    </div>
   </div>
 </footer>
 
+<style>
+  footer a:hover {
+    color: #06b6d4 !important;
+  }
+  
+  footer .social-icons a:hover {
+    transform: scale(1.1);
+    color: #f97316 !important;
+  }
+  
+  @media (max-width: 768px) {
+    footer div[style*="grid-template-columns"] {
+      grid-template-columns: 1fr !important;
+      gap: 30px !important;
+    }
+  }
+</style>
+
+<script src="js/main.js"></script>
 </body>
 </html>
