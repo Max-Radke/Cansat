@@ -1,8 +1,5 @@
 /* Mobile-First Responsive Design für DeltaV CanSat Website */
 
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap');
-
 /* Mobile-First Base Styles */
 * {
     margin: 0;
@@ -112,6 +109,9 @@ main {
     max-width: 100%;
     margin: 15px auto;
     padding: 0 15px;
+    background-color: transparent;
+    box-shadow: none;
+    border-radius: 0;
 }
 
 /* Sections Mobile Optimizations */
@@ -656,3 +656,4 @@ footer {
         border: 1px solid #ccc;
     }
 }
+
