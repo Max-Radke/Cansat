@@ -2,7 +2,7 @@
 function updateCountdown() {
     const countdownElement = document.getElementById("countdown");
     const rocketElement = document.getElementById("rocket");
-    const launchDate = new Date("2026-03-03T00:00:00").getTime();
+    const launchDate = new Date("2026-03-13T00:00:00").getTime();
     const now = new Date().getTime();
     const distance = launchDate - now;
 
@@ -22,3 +22,4 @@ function updateCountdown() {
 
 setInterval(updateCountdown, 1000);
 updateCountdown();
+
