@@ -1,0 +1,183 @@
+/* Allgemeines Layout */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header und Navigation */
+header {
+    background-color: #003366;
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
+    transition: box-shadow 0.4s ease;
+}
+
+header:hover {
+    box-shadow: 0 4px 30px #00000066;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hauptinhalt */
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 2rem;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+
+/* Hero-Bereich */
+.hero {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    border-radius: 12px;
+}
+
+/* Info-Bereich */
+.info {
+    margin-top: 2rem;
+}
+
+/* Footer */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 3rem;
+    transition: box-shadow 0.4s ease;
+}
+
+footer:hover {
+    box-shadow: 0 4px 30px #00000066;
+}
+
+/* Countdown Style */
+.countdown-section {
+    text-align: center;
+    background-color: #e6f2ff;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#countdown {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #003366;
+    margin: 1rem 0;
+}
+
+#rocket {
+    font-size: 3rem;
+    transition: transform 2s ease-in-out;
+    display: inline-block;
+}
+
+/* Raketenstart-Animation */
+.launch {
+    animation: fly 2s forwards;
+}
+
+@keyframes fly {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+}
+
+/* Galerie */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    margin-top: 1rem;
+}
+
+.gallery img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    display: block;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: white;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.gallery img:hover {
+    transform: scale(1.02);
+}
+
+.social-icons a {
+  margin: 0 8px;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.social-icons img {
+  height: 40px;
+  width: 40px;
+  vertical-align: middle;
+}
