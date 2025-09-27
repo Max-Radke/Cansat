@@ -2,98 +2,205 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>Galerie – DeltaV Team</title>
+  <title>DeltaV – CanSat Team 2025/26</title>
+  <meta name="description" content="DeltaV ist ein Schülerteam der Europäischen Gesamtschule Insel Usedom und nimmt am Deutschen CanSat-Wettbewerb 2025/26 teil. Wir entwickeln einen Minisatelliten und forschen zur Atmosphärenmessung.">
+  <meta name="keywords" content="DeltaV, CanSat, Schülerprojekt, Minisatellit, Raumfahrt, Europäische Gesamtschule Insel Usedom, Wettbewerb 2025">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Metadaten für SEO und Social Media -->
-  <meta name="description" content="Galerie des DeltaV-Teams – Eindrücke aus unserem CanSat-Projekt 2025/26.">
-  <meta name="keywords" content="DeltaV, CanSat, Galerie, Schülerprojekt, Raumfahrt, Minisatellit">
-  <meta property="og:title" content="Galerie – DeltaV Team">
-  <meta property="og:description" content="Bilder und Eindrücke vom DeltaV CanSat-Team 2025/26.">
+  <!-- Open Graph für Social Media -->
+  <meta property="og:title" content="DeltaV – CanSat Team 2025/26">
+  <meta property="og:description" content="Das DeltaV-Team nimmt am Deutschen CanSat-Wettbewerb teil. Erfahren Sie hier mehr über unsere Mission.">
   <meta property="og:image" content="https://www.deltav-team.de/images/deltav.jpg">
-  <meta property="og:url" content="https://www.deltav-team.de/gallery.html">
+  <meta property="og:url" content="https://www.deltav-team.de">
   <meta property="og:type" content="website">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="images/favicon.png">
   <link rel="apple-touch-icon" href="images/favicon.png">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
 
   <style>
-      .gallery-grid {
-          display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-          gap: 20px;
-          padding: 20px;
-      }
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap');
+    
+    body {
+      font-family: 'Roboto', sans-serif;
+      color: #333333;
+      line-height: 1.6;
+      margin: 0;
+      background: #fff;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+    }
 
-      .gallery-grid img {
-          width: 100%;
-          height: auto;
-          object-fit: cover;
-          border-radius: 8px;
-          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-          cursor: pointer;
-          transition: transform 0.3s ease;
-      }
+    .contact-section {
+      background: #f8f9fa;
+      padding: 40px 30px;
+      margin: 30px 20px;
+      border-radius: 8px;
+      border-left: 4px solid #06b6d4;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
 
-      .gallery-grid img:hover {
-          transform: scale(1.05);
-      }
+    .contact-section h2 {
+      color: #0a192f;
+      font-size: 2.2em;
+      margin-bottom: 15px;
+      text-align: center;
+    }
 
-      .lightbox {
-          display: none;
-          position: fixed;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background: rgba(0,0,0,0.8);
-          justify-content: center;
-          align-items: center;
-          z-index: 1000;
-      }
+    .contact-section p {
+      font-size: 1.05em;
+      line-height: 1.6;
+      color: #333333;
+      margin-bottom: 10px;
+      text-align: center;
+    }
 
-      .lightbox img {
-          max-width: 90%;
-          max-height: 80%;
-          border-radius: 8px;
-          box-shadow: 0 0 20px rgba(255,255,255,0.3);
-      }
+    .contact-card {
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      margin: 25px 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      border: 1px solid #e9ecef;
+      text-align: center;
+    }
 
-      .lightbox:target {
-          display: flex;
-      }
+    .contact-card h3 {
+      color: #0a192f;
+      font-size: 1.3em;
+      margin-bottom: 12px;
+    }
 
-      .close-btn {
-          position: absolute;
-          top: 20px;
-          right: 30px;
-          color: white;
-          font-size: 30px;
-          text-decoration: none;
-          font-weight: bold;
+    .contact-card p {
+      color: #333333;
+      margin-bottom: 10px;
+    }
+
+    .contact-card a {
+      color: #06b6d4;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .contact-card a:hover {
+      color: #f97316;
+    }
+
+    .social-card {
+      background: #0a192f;
+      color: white;
+      padding: 30px;
+      border-radius: 8px;
+      margin: 25px 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .social-card h3 {
+      color: white;
+      font-size: 1.3em;
+      margin-bottom: 14px;
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+    }
+
+    .social-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.1em;
+      transition: all 0.3s ease;
+      display: block;
+      padding: 8px 12px;
+      border-radius: 8px;
+      background: rgba(255,255,255,0.02);
+    }
+
+    .social-links a:hover {
+      color: #f97316;
+      transform: scale(1.03);
+    }
+
+    .sponsors-call-to-action {
+      background: #f8f9fa;
+      padding: 30px;
+      border-radius: 8px;
+      margin: 25px 20px 60px;
+      text-align: center;
+      border: 2px solid #06b6d4;
+    }
+
+    .sponsors-call-to-action h3 {
+      color: #0a192f;
+      font-size: 1.3em;
+      margin-bottom: 12px;
+    }
+
+    .sponsors-call-to-action p {
+      color: #333333;
+      margin-bottom: 16px;
+    }
+
+    .sponsors-call-to-action a {
+      display: inline-block;
+      background: #f97316;
+      color: white;
+      padding: 12px 25px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .sponsors-call-to-action a:hover {
+      background: #e55a0e;
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 768px) {
+      .social-links {
+        flex-direction: column;
+        gap: 12px;
       }
+      
+      .contact-section {
+        padding: 20px;
+        margin: 15px 12px;
+      }
+      
+      .contact-section h2 {
+        font-size: 1.8em;
+      }
+    }
   </style>
 </head>
 <body>
 
 <header style="background: #0a192f; color: white; padding: 30px 0; margin-bottom: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
   <div style="display: flex; justify-content: right; gap: 10px; margin-right :20px;">
-    <div class="btn"><a href="index.html" style="text-decoration: none;">🇩🇪</a></div>
-    <div class="btn"><a href="POL/index.html" style="text-decoration: none;">🇵🇱</a></div>
-    <div class="btn"><a href="ENG/index.html" style="text-decoration: none;">🇬🇧</a></div>
+    <div class="btn"><a href="index.html" style="text-decoration: none; color: white;">🇩🇪</a></div>
+    <div class="btn"><a href="POL/index.html" style="text-decoration: none; color: white;">🇵🇱</a></div>
+    <div class="btn"><a href="EN/index.html" style="text-decoration: none; color: white;">🇬🇧</a></div>
   </div>
 
   <style>
     .btn {
-      font-size: 30px;
+      font-size: 28px;
     }
-
-    .btn :hover {
-      font-size: 38px;
-      transition: 0.3s ease;
+    .btn a { display: inline-block; }
+    .btn a:hover {
+      transform: scale(1.15);
+      transition: 0.2s ease;
     }
   </style>
 
@@ -135,28 +242,47 @@
 </style>
 
 <main>
-    <h2>Unsere Bilder</h2>
-    <p>Klicke auf ein Bild, um es zu vergrößern.</p>
-    <div class="gallery-grid">
-        <a href="#img1"><img src="images/gruppenbild.JPEG" alt="DLR"></a>
-        <a href="#img2"><img src="images/logo.png" alt="Logo"></a>
-        <a href="#img3"><img src="images/schule.jpg" alt="Schule"></a>
+    <div class="contact-section">
+        <h2>📞 So erreichen Sie uns</h2>
+        <p>Haben Sie Fragen zu unserem CanSat-Projekt? Wir freuen uns auf Ihre Nachricht!</p>
     </div>
 
-    <!-- Lightbox-Bilder -->
-    <div id="img1" class="lightbox">
-        <a href="#" class="close-btn">&times;</a>
-        <img src="images/gruppenbild.JPEG" alt="DLR">
+    <div class="contact-card">
+        <h3>📧 E-Mail Kontakt</h3>
+        <p>Für allgemeine Anfragen, projektbezogene Fragen oder Kooperationswünsche:</p>
+        <p><a href="mailto:info@deltav-team.de">info@deltav-team.de</a></p>
+        <p>Wir antworten in der Regel innerhalb von 24 Stunden.</p>
     </div>
 
-    <div id="img2" class="lightbox">
-        <a href="#" class="close-btn">&times;</a>
-        <img src="images/logo.png" alt="Logo">
+    <div class="social-card">
+        <h3>📱 Soziale Medien</h3>
+        <p>Folgen Sie uns in den sozialen Medien für aktuelle Updates und Einblicke in unser Projekt!</p>
+
+        <div class="social-links">
+            <a href="https://www.instagram.com/delta_v_team/" target="_blank" title="Instagram">
+                📷 Instagram
+            </a>
+            <a href="https://www.tiktok.com/@delta_v_team" target="_blank" title="TikTok">
+                🎵 TikTok
+            </a>
+        </div>
+
+        <p>Hier teilen wir regelmäßig Fotos, Videos und Neuigkeiten zu unserem CanSat-Projekt.</p>
     </div>
 
-    <div id="img3" class="lightbox">
-        <a href="#" class="close-btn">&times;</a>
-        <img src="images/schule.jpg" alt="Schule">
+    <div class="contact-card">
+        <h3>🏫 Schule</h3>
+        <p>DeltaV CanSat Team</p>
+        <p>Europäische Gesamtschule Insel Usedom</p>
+        <p>Lindenstraße 112</p>
+        <p>17419 Seebad Ahlbeck</p>
+        <p>Deutschland</p>
+    </div>
+
+    <div class="sponsors-call-to-action">
+        <h3>🤝 Interesse an einer Partnerschaft?</h3>
+        <p>Möchten Sie unser CanSat-Projekt unterstützen? Wir suchen Partner und Sponsoren, die uns helfen, unser Projekt umzusetzen.</p>
+        <a href="sponsors.html">Partner werden</a>
     </div>
 </main>
 
@@ -164,7 +290,7 @@
   <div style="max-width: 1200px; margin: 0 auto;">
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-bottom: 30px;">
       
-      <!-- Links: Rechtliches -->
+      <!-- Left: Legal -->
       <div>
         <h4 style="color: white; margin-bottom: 15px; font-family: 'Montserrat', sans-serif;">Rechtliches</h4>
         <ul style="list-style: none; padding: 0; margin: 0;">
@@ -174,21 +300,21 @@
         </ul>
       </div>
       
-      <!-- Mitte: Sponsoren -->
+      <!-- Middle: Sponsors -->
       <div style="text-align: center;">
         <h4 style="color: white; margin-bottom: 15px; font-family: 'Montserrat', sans-serif;">Unsere Partner</h4>
-        <a href="https://www.check1avergleichsportal.de/" target="_blank">
+        <a href="https://www.check1avergleichsportal.de/" target="_blank" rel="noopener noreferrer">
           <img src="images/check1a-logo.png" alt="Check1A GmbH Logo" style="max-height: 180px; height: auto; margin: 10px;">
         </a>
-        <a href="http://www.lipinski-dzwigi.pl/" target="_blank">
+        <a href="http://www.lipinski-dzwigi.pl/" target="_blank" rel="noopener noreferrer">
           <img src="images/Zakladdzwigowy.png" alt="Lipiński Dźwigi" style="max-height: 180px; height: auto; margin: 10px;">
         </a>
-        <a href="https://www.werbeagentur-nickel.de/" target="_blank">
+        <a href="https://www.werbeagentur-nickel.de/" target="_blank" rel="noopener noreferrer">
           <img src="images/WerbeagenturMarkoNickel_Logo.jpg" alt="Werbeagentur Marko Nickel Logo" style="max-height: 180px; height: auto; margin: 10px;">
         </a>
       </div>
       
-      <!-- Rechts: Social Media -->
+      <!-- Right: Social Media -->
       <div style="text-align: center;">
         <h4 style="color: white; margin-bottom: 15px; font-family: 'Montserrat', sans-serif;">Folgen Sie uns</h4>
         <div style="display: flex; justify-content: center; gap: 20px; margin-bottom: 15px;">
