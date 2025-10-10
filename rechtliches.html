@@ -158,8 +158,15 @@
 </head>
 <body>
 
-<header style="background: #0a192f; color: white; padding: 30px 0; margin-bottom: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-  <div style="display: flex; justify-content: right; gap: 10px; margin-right :20px;">
+<header style="
+  background: url('images/Header Stern.jpg') center/cover no-repeat;
+  color: white;
+  padding: 30px 0;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  background-attachment: fixed;
+">
+  <div style="display: flex; justify-content: right; gap: 10px; margin-right: 20px;">
     <div class="btn"><a href="index.html" style="text-decoration: none;">🇩🇪</a></div>
     <div class="btn"><a href="POL/index.html" style="text-decoration: none;">🇵🇱</a></div>
     <div class="btn"><a href="ENG/index.html" style="text-decoration: none;">🇬🇧</a></div>
@@ -177,14 +184,16 @@
   </style>
 
   <div style="text-align:center; max-width: 1200px; margin: 0 auto; padding: 0 20px;">
-    <h1 style="margin-bottom:20px; font-size: 2.5em; color: white; font-family: 'Montserrat', sans-serif;">🚀 DeltaV – CanSat Team 2025/26</h1>
+    <h1 style="margin-bottom:20px; font-size: 2.5em; color: white; font-family: 'Montserrat', sans-serif; text-shadow: 0 2px 8px rgba(0,0,0,0.5);">
+      🚀 DeltaV – CanSat Team 2025/26
+    </h1>
     <div style="display:flex; justify-content:center; gap:30px; flex-wrap:wrap; margin-bottom: 25px;">
-      <img src="images/logo.png" alt="CanSat Logo" style="height:80px; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">
-      <img src="images/deltav.png" alt="DeltaV Logo" style="height:80px; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">
+      <img src="images/logo.png" alt="CanSat Logo" style="height:80px; border-radius:6px; box-shadow:0 2px 8px rgba(0,0,0,0.2);">
+      <img src="images/deltav.png" alt="DeltaV Logo" style="height:80px; border-radius:6px; box-shadow:0 2px 8px rgba(0,0,0,0.2);">
     </div>
   </div>
 
-  <nav style="background: rgba(255,255,255,0.05); border-radius: 8px; margin: 0 auto; max-width: 1000px; padding: 15px 20px;">
+  <nav style="background: rgba(0,0,0,0.4); border-radius: 8px; margin: 0 auto; max-width: 1000px; padding: 15px 20px;">
     <ul style="display: flex; justify-content: center; flex-wrap: wrap; gap: 15px; list-style: none; margin: 0; padding: 0;">
       <li><a href="index.html" style="color: white; text-decoration: none; padding: 10px 20px; border-radius: 6px; transition: all 0.3s ease; background: rgba(255,255,255,0.1);">🏠 Start</a></li>
       <li><a href="about.html" style="color: white; text-decoration: none; padding: 10px 20px; border-radius: 6px; transition: all 0.3s ease; background: rgba(255,255,255,0.1);">🚀 Projekt</a></li>
@@ -283,12 +292,18 @@
       <div>
         <h4 style="color: white; margin-bottom: 15px; font-family: 'Montserrat', sans-serif;">Rechtliches</h4>
         <ul style="list-style: none; padding: 0; margin: 0;">
-          <li style="margin-bottom: 8px;"><a href="rechtliches.html" style="color: #cccccc; text-decoration: none; transition: color 0.3s ease;">Impressum</a></li>
-          <li style="margin-bottom: 8px;"><a href="rechtliches.html" style="color: #cccccc; text-decoration: none; transition: color 0.3s ease;">Datenschutz</a></li>
-          <li style="margin-bottom: 8px;"><a href="contact.html" style="color: #cccccc; text-decoration: none; transition: color 0.3s ease;">Kontakt</a></li>
+          <li style="margin-bottom: 8px;">
+            <a href="rechtliches.html" style="color: #cccccc; text-decoration: none; transition: color 0.3s ease;">Impressum</a>
+          </li>
+          <li style="margin-bottom: 8px;">
+            <a href="rechtliches.html" style="color: #cccccc; text-decoration: none; transition: color 0.3s ease;">Datenschutz</a>
+          </li>
+          <li style="margin-bottom: 8px;">
+            <a href="contact.html" style="color: #cccccc; text-decoration: none; transition: color 0.3s ease;">Kontakt</a>
+          </li>
         </ul>
       </div>
-      
+
       <!-- Mitte: Sponsoren -->
       <div style="text-align: center;">
         <h4 style="color: white; margin-bottom: 15px; font-family: 'Montserrat', sans-serif;">Unsere Partner</h4>
@@ -301,25 +316,48 @@
         <a href="https://www.werbeagentur-nickel.de/" target="_blank">
           <img src="images/WerbeagenturMarkoNickel_Logo.jpg" alt="Werbeagentur Marko Nickel Logo" style="max-height: 180px; height: auto; margin: 10px;">
         </a>
+        <a href="https://www.dlr.de/de/das-dlr/standorte-und-bueros/neustrelitz" target="_blank">
+          <img src="images/DLR logo.jpg" alt="DLR Neustrelitz Logo" style="max-height: 180px; height: auto; margin: 10px;">
+        </a>
       </div>
-      
-      <!-- Rechts: Social Media -->
+
+      <!-- Rechts: Social Media mit Hover-Effekt -->
       <div style="text-align: center;">
         <h4 style="color: white; margin-bottom: 15px; font-family: 'Montserrat', sans-serif;">Folgen Sie uns</h4>
-        <div style="display: flex; justify-content: center; gap: 20px; margin-bottom: 15px;">
-          <a href="https://www.instagram.com/delta_v_team/" target="_blank" style="color: #cccccc; text-decoration: none; font-size: 1.5em; transition: all 0.3s ease;" title="Instagram">📷</a>
-          <a href="https://www.tiktok.com/@delta_v_team" target="_blank" style="color: #cccccc; text-decoration: none; font-size: 1.5em; transition: all 0.3s ease;" title="TikTok">🎵</a>
-          <a href="mailto:info@deltav-team.de" style="color: #cccccc; text-decoration: none; font-size: 1.5em; transition: all 0.3s ease;" title="E-Mail">📧</a>
+        <div style="display: flex; justify-content: center; gap: 25px; margin-bottom: 15px; align-items: center;">
+          <a href="https://www.instagram.com/delta_v_team/" target="_blank" title="Instagram" style="text-decoration: none;">
+            <img src="images/instagram_icon(1).png" alt="Instagram" class="social-icon">
+          </a>
+          <a href="https://www.tiktok.com/@delta_v_team" target="_blank" title="TikTok" style="text-decoration: none;">
+            <img src="images/tiktok_icon.png" alt="TikTok" class="social-icon">
+          </a>
+          <a href="mailto:info@deltav-team.de" title="E-Mail" style="text-decoration: none;">
+            <img src="images/Mail-icon.png" alt="E-Mail" class="social-icon">
+          </a>
         </div>
         <p style="margin: 0; font-size: 0.9em; color: #999;">info@deltav-team.de</p>
       </div>
+
     </div>
-    
+
     <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; text-align: center;">
       <p style="margin: 0; color: #999; font-size: 0.9em;">© 2025 DeltaV CanSat Team. Alle Rechte vorbehalten.</p>
     </div>
   </div>
 </footer>
+
+<!-- Hover-Effekt für Social Icons -->
+<style>
+  .social-icon {
+    height: 32px;
+    width: auto;
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  .social-icon:hover {
+    transform: scale(1.2);
+    filter: brightness(1.4);
+  }
+</style>
 
 <style>
   footer a:hover {
@@ -342,3 +380,4 @@
 <script src="js/main.js"></script>
 </body>
 </html>
+
