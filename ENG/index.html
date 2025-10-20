@@ -1,18 +1,22 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>DeltaV – CanSat Team 2025/26</title>
-  <meta name="description" content="DeltaV is a student team from the European Comprehensive School on the island of Usedom and is participating in the 2025/26 German CanSat competition. We are developing a mini-satellite and researching the atmosphere.">
-  <meta name="keywords" content="DeltaV, CanSat, Schülerprojekt, Minisatellit, Raumfahrt, Europäische Gesamtschule Insel Usedom, Wettbewerb 2025">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DeltaV – CanSat Team 2025/26 | Student Project Mini Satellite, Space Research Mecklenburg-Vorpommern</title>
 
-  <!-- Open Graph für Social Media -->
+  <!-- SEO (translated content only) -->
+  <meta name="description" content="DeltaV is a dedicated student team from the European Comprehensive School Island Usedom in Mecklenburg-Vorpommern. We are developing a mini satellite for the German CanSat Competition 2025/26 and researching the atmosphere.">
+  <meta name="keywords" content="DeltaV, CanSat, student project, mini satellite, space research, European Comprehensive School Island Usedom, competition 2025">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://www.deltav-team.de/">
+
+  <!-- Open Graph -->
   <meta property="og:title" content="DeltaV – CanSat Team 2025/26">
   <meta property="og:description" content="The DeltaV team is participating in the German CanSat competition. Learn all about our mission here.">
   <meta property="og:image" content="https://www.deltav-team.de/images/deltav.jpg">
   <meta property="og:url" content="https://www.deltav-team.de">
   <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="images/favicon.png">
@@ -20,18 +24,22 @@
   <link rel="stylesheet" href="css/style.css">
 
   <style>
+    /* --- Fonts baseline (keine Designänderung) --- */
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap');
-    
+
     body {
       font-family: 'Roboto', sans-serif;
       color: #333333;
       line-height: 1.6;
+      margin: 0;
     }
-    
-    h1, h2, h3, h4, h5, h6 {
+
+    h1,h2,h3,h4,h5,h6 {
       font-family: 'Montserrat', sans-serif;
       font-weight: 600;
     }
+
+    /* --- Kopie eures Original-CSS (Design unverändert) --- */
 
     .hero {
       background: #0a192f;
@@ -58,7 +66,7 @@
     .hero img {
       border-radius: 8px;
       box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-       max-width: 100%;
+      max-width: 100%;
       height: auto;
     }
 
@@ -194,8 +202,33 @@
       .countdown-section h2 { font-size: 1.5em; }
       #countdown { font-size: 2em; }
       .sponsor-cards { grid-template-columns: 1fr; }
-    
     }
+
+    /* Announcement Banner (subtle as requested) */
+    .announcement {
+      background: linear-gradient(90deg, #06b6d4, #f97316);
+      color: white;
+      text-align: center;
+      padding: 15px 10px;
+      font-size: 1.2em;
+      font-weight: 500;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      margin: 0 auto 30px auto;
+      max-width: 1000px;
+    }
+
+    /* Social icon hover (Footer) */
+    .social-icon {
+      height: 32px;
+      width: auto;
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+    .social-icon:hover {
+      transform: scale(1.2);
+      filter: brightness(1.4);
+    }
+
   </style>
 </head>
 <body>
@@ -218,32 +251,34 @@
     .btn { font-size: 30px; }
     .btn :hover { font-size: 38px; transition: 0.3s ease; }
   </style>
-  
+
   <div style="text-align:center; max-width: 1200px; margin: 0 auto; padding: 0 20px;">
     <h1 style="margin-bottom:20px; font-size: 2.5em; color: white; font-family: 'Montserrat', sans-serif; text-shadow: 0 2px 8px rgba(0,0,0,0.5);">
       🚀 DeltaV – CanSat Team 2025/26
     </h1>
     <div style="display:flex; justify-content:center; gap:30px; flex-wrap:wrap; margin-bottom: 25px;">
-      <img src="images/logo.png" alt="CanSat Logo" style="height:80px; border-radius:6px; box-shadow:0 2px 8px rgba(0,0,0,0.2);">
-      <img src="images/deltav.png" alt="DeltaV Logo" style="height:80px; border-radius:6px; box-shadow:0 2px 8px rgba(0,0,0,0.2);">
+      <!-- Header-Logos in Original-Proportion (wie vorher) -->
+      <img src="images/logo.png" alt="CanSat Logo" style="height:80px; border-radius:6px; box-shadow:0 2px 8px rgba(0,0,0,0.2);" loading="lazy">
+      <img src="images/deltav.png" alt="DeltaV Logo" style="height:80px; border-radius:6px; box-shadow:0 2px 8px rgba(0,0,0,0.2);" loading="lazy">
     </div>
   </div>
 
   <nav style="background: rgba(0,0,0,0.4); border-radius: 8px; margin: 0 auto; max-width: 1000px; padding: 15px 20px;">
     <ul style="display: flex; justify-content: center; flex-wrap: wrap; gap: 15px; list-style: none; margin: 0; padding: 0;">
-      <li><a href="index.html" style="color: white; text-decoration: none; padding: 10px 20px; border-radius: 6px; background: rgba(255,255,255,0.1);">🏠 Main</a></li>
-      <li><a href="about.html" style="color: white; text-decoration: none; padding: 10px 20px; border-radius: 6px; background: rgba(255,255,255,0.1);">🚀 Project</a></li>
-      <li><a href="team.html" style="color: white; text-decoration: none; padding: 10px 20px; border-radius: 6px; background: rgba(255,255,255,0.1);">👥 Team</a></li>
-      <li><a href="mission.html" style="color: white; text-decoration: none; padding: 10px 20px; border-radius: 6px; background: rgba(255,255,255,0.1);">🎯 Mission</a></li>
-      <li><a href="progress.html" style="color: white; text-decoration: none; padding: 10px 20px; border-radius: 6px; background: rgba(255,255,255,0.1);">📈 Progress</a></li>
-      <li><a href="gallery.html" style="color: white; text-decoration: none; padding: 10px 20px; border-radius: 6px; background: rgba(255,255,255,0.1);">📸 Gallery</a></li>
-      <li><a href="contact.html" style="color: white; text-decoration: none; padding: 10px 20px; border-radius: 6px; background: rgba(255,255,255,0.1);">📞 Contact</a></li>
-      <li><a href="sponsors.html" style="color: white; text-decoration: none; padding: 10px 20px; border-radius: 6px; background: rgba(255,255,255,0.1);">🤝 Sponsors</a></li>
-      <li><a href="rechtliches.html" style="color: white; text-decoration: none; padding: 10px 20px; border-radius: 6px; background: rgba(255,255,255,0.1);">⚖️ Legal information</a></li>
+      <li><a href="index.html" style="color: white; text-decoration: none; padding: 10px 20px; border-radius: 6px; transition: all 0.3s ease; background: rgba(255,255,255,0.1);">🏠 Main</a></li>
+      <li><a href="about.html" style="color: white; text-decoration: none; padding: 10px 20px; border-radius: 6px; transition: all 0.3s ease; background: rgba(255,255,255,0.1);">🚀 Project</a></li>
+      <li><a href="team.html" style="color: white; text-decoration: none; padding: 10px 20px; border-radius: 6px; transition: all 0.3s ease; background: rgba(255,255,255,0.1);">👥 Team</a></li>
+      <li><a href="mission.html" style="color: white; text-decoration: none; padding: 10px 20px; border-radius: 6px; transition: all 0.3s ease; background: rgba(255,255,255,0.1);">🎯 Mission</a></li>
+      <li><a href="progress.html" style="color: white; text-decoration: none; padding: 10px 20px; border-radius: 6px; transition: all 0.3s ease; background: rgba(255,255,255,0.1);">📈 Progress</a></li>
+      <li><a href="gallery.html" style="color: white; text-decoration: none; padding: 10px 20px; border-radius: 6px; transition: all 0.3s ease; background: rgba(255,255,255,0.1);">📸 Gallery</a></li>
+      <li><a href="contact.html" style="color: white; text-decoration: none; padding: 10px 20px; border-radius: 6px; transition: all 0.3s ease; background: rgba(255,255,255,0.1);">📞 Contact</a></li>
+      <li><a href="sponsors.html" style="color: white; text-decoration: none; padding: 10px 20px; border-radius: 6px; transition: all 0.3s ease; background: rgba(255,255,255,0.1);">🤝 Sponsors</a></li>
+      <li><a href="rechtliches.html" style="color: white; text-decoration: none; padding: 10px 20px; border-radius: 6px; transition: all 0.3s ease; background: rgba(255,255,255,0.1);">⚖️ Legal information</a></li>
     </ul>
   </nav>
 </header>
 
+<!-- Hover effect for nav + responsive tweaks -->
 <style>
   nav a:hover {
     background: #f97316 !important;
@@ -259,90 +294,100 @@
 </style>
 
 <main>
+  <!-- Optional announcement (kept from German version) -->
+  <!-- <div class="announcement">We have been officially accepted to the German CanSat Competition 2025/26 — follow our progress!</div> -->
 
   <section class="countdown-section">
-    <h2>Estimated time to rocket launch</h2>
+    <h2>Estimated countdown to rocket launch</h2>
     <p id="countdown">Loading...</p>
     <div id="rocket">🚀</div>
   </section>
 
   <section class="hero">
     <h2>Welcome to our CanSat project</h2>
-    <p>We are the DeltaV team. A dedicated group of students who will build and launch a mini-satellite as part of the German CanSat 25/26 competition.</p>
-    <img src="images/gruppenbild.JPEG" alt="Teamfoto unseres CanSat-Projekts">
+    <p>We are the DeltaV team, a dedicated student group from the European Comprehensive School Island Usedom. We have been <strong>officially accepted for the German CanSat Competition 2025/26</strong> and are now developing a mini satellite that collects measurement data during rocket flight and transmits it to the ground station. Learn more about our <a href="progress.html">project progress</a> or our <a href="team.html">team</a>.</p>
+    <!-- Group photo with original behavior (no distortion) -->
+    <img src="images/gruppenbild.JPEG" alt="Team photo of our CanSat project" loading="lazy" style="max-width:100%; height:auto; border-radius:8px;">
   </section>
 
-<section class="info">
-  <h3>What is it about?</h3>
-  <p>A CanSat is a miniature satellite the size of a beverage can. Our mission: to collect measurement data, transmit it via radio, and carry out our own scientific experiment – space technology in miniature.</p>
-  <p><strong>We are one of the few teams from Mecklenburg-Vorpommern</strong> that have applied for the German CanSat competition 2025/26 – and we want to show that space exploration is also possible from the Baltic coast! 🌍🚀</p>
-</section>
+  <section class="info">
+    <h3>What is it about?</h3>
+    <p>A CanSat is a miniature satellite the size of a beverage can. Our mission: collect data, transmit it by radio, and conduct our own scientific experiment – space technology in miniature form.</p>
+    <p><strong>We are the only team from Mecklenburg-Vorpommern</strong> participating in the German CanSat Competition 2025/26, and we want to show that space exploration is also possible from the Baltic Sea coast! 🌍🚀</p>
+  </section>
 
   <section class="sponsoring-teaser">
-    <h3>🚀 Help us with our project!</h3>
-    <p>As a team of students, we need support with equipment, materials, and travel costs. Join our mission and help us develop innovative space technologies.</p>
+    <h3>🚀 Support our project!</h3>
+    <p>As a student team, we need support for hardware, materials, and travel expenses. Become part of our mission and help us develop innovative space technology!</p>
     <a href="sponsors.html" class="cta-button">
-      💡 More & become a partner
+      💡 Learn more & become a partner
     </a>
   </section>
-
 </main>
 
 <footer style="background: #0a192f; color: #cccccc; padding: 40px 20px; margin-top: 50px;">
   <div style="max-width: 1200px; margin: 0 auto;">
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-bottom: 30px;">
       
-      <!-- Left: Legal -->
+      <!-- Links: Legal -->
       <div>
-        <h4 style="color: white; margin-bottom: 15px; font-family: 'Montserrat', sans-serif;">Legal information</h4>
+        <h4 style="color: white; margin-bottom: 15px; font-family: 'Montserrat', sans-serif;">Legal</h4>
         <ul style="list-style: none; padding: 0; margin: 0;">
-          <li style="margin-bottom: 8px;"><a href="rechtliches.html" style="color: #cccccc; text-decoration: none; transition: color 0.3s ease;">Impressum</a></li>
-          <li style="margin-bottom: 8px;"><a href="rechtliches.html" style="color: #cccccc; text-decoration: none; transition: color 0.3s ease;">Data protection</a></li>
-          <li style="margin-bottom: 8px;"><a href="contact.html" style="color: #cccccc; text-decoration: none; transition: color 0.3s ease;">Contact</a></li>
+          <li style="margin-bottom: 8px;">
+            <a href="rechtliches.html" style="color: #cccccc; text-decoration: none; transition: color 0.3s ease;">Imprint</a>
+          </li>
+          <li style="margin-bottom: 8px;">
+            <a href="rechtliches.html" style="color: #cccccc; text-decoration: none; transition: color 0.3s ease;">Privacy Policy</a>
+          </li>
+          <li style="margin-bottom: 8px;">
+            <a href="contact.html" style="color: #cccccc; text-decoration: none; transition: color 0.3s ease;">Contact</a>
+          </li>
         </ul>
       </div>
-      
+
       <!-- Middle: Sponsors -->
       <div style="text-align: center;">
-        <h4 style="color: white; margin-bottom: 15px; font-family: 'Montserrat', sans-serif;">Our partners</h4>
+        <h4 style="color: white; margin-bottom: 15px; font-family: 'Montserrat', sans-serif;">Our Partners</h4>
         <a href="https://www.check1avergleichsportal.de/" target="_blank">
-          <img src="images/check1a-logo.png" alt="Check1A GmbH Logo" style="max-height: 180px; height: auto; margin: 10px;">
+          <img src="images/check1a-logo.png" alt="Check1A GmbH Logo" style="max-height: 180px; height: auto; margin: 10px;" loading="lazy">
         </a>
         <a href="http://www.lipinski-dzwigi.pl/" target="_blank">
-          <img src="images/Zakladdzwigowy.png" alt="Lipiński Dźwigi" style="max-height: 180px; height: auto; margin: 10px;">
+          <img src="images/Zakladdzwigowy.png" alt="Lipiński Dźwigi" style="max-height: 180px; height: auto; margin: 10px;" loading="lazy">
         </a>
         <a href="https://www.werbeagentur-nickel.de/" target="_blank">
-          <img src="images/WerbeagenturMarkoNickel_Logo.jpg" alt="Werbeagentur Marko Nickel Logo" style="max-height: 180px; height: auto; margin: 10px;">
+          <img src="images/WerbeagenturMarkoNickel_Logo.jpg" alt="Werbeagentur Marko Nickel Logo" style="max-height: 180px; height: auto; margin: 10px;" loading="lazy">
         </a>
         <a href="https://www.dlr.de/de/das-dlr/standorte-und-bueros/neustrelitz" target="_blank">
-          <img src="images/DLR logo.jpg" alt="DLR Neustrelitz Logo" style="max-height: 180px; height: auto; margin: 10px;">
+          <img src="images/DLR logo.jpg" alt="DLR Neustrelitz Logo" style="max-height: 180px; height: auto; margin: 10px;" loading="lazy">
         </a>
       </div>
-      
+
       <!-- Right: Social Media -->
       <div style="text-align: center;">
-        <h4 style="color: white; margin-bottom: 15px; font-family: 'Montserrat', sans-serif;">Follow us!</h4>
+        <h4 style="color: white; margin-bottom: 15px; font-family: 'Montserrat', sans-serif;">Follow us</h4>
         <div style="display: flex; justify-content: center; gap: 25px; margin-bottom: 15px; align-items: center;">
           <a href="https://www.instagram.com/delta_v_team/" target="_blank" title="Instagram" style="text-decoration: none;">
-            <img src="images/instagram_icon(1).png" alt="Instagram" class="social-icon">
+            <img src="images/instagram_icon(1).png" alt="Instagram" class="social-icon" loading="lazy">
           </a>
           <a href="https://www.tiktok.com/@delta_v_team" target="_blank" title="TikTok" style="text-decoration: none;">
-            <img src="images/tiktok_icon.png" alt="TikTok" class="social-icon">
+            <img src="images/tiktok_icon.png" alt="TikTok" class="social-icon" loading="lazy">
           </a>
           <a href="mailto:info@deltav-team.de" title="E-Mail" style="text-decoration: none;">
-            <img src="images/Mail-icon.png" alt="E-Mail" class="social-icon">
+            <img src="images/Mail-icon.png" alt="E-Mail" class="social-icon" loading="lazy">
           </a>
         </div>
         <p style="margin: 0; font-size: 0.9em; color: #999;">info@deltav-team.de</p>
       </div>
+
     </div>
-    
+
     <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; text-align: center;">
       <p style="margin: 0; color: #999; font-size: 0.9em;">© 2025 DeltaV CanSat Team. All rights reserved.</p>
     </div>
   </div>
 </footer>
 
+<!-- Hover-Effekt for Social Icons (kept) -->
 <style>
   .social-icon {
     height: 32px;
@@ -373,6 +418,49 @@
   }
 </style>
 
+<!-- Countdown Script (merged behavior from German version; text in English) -->
+<script>
+  const countdown = document.getElementById("countdown");
+  // Set a realistic date — change as needed
+  const launchDate = new Date("2026-03-20T09:00:00").getTime();
+
+  function updateCountdown() {
+    const now = new Date().getTime();
+    const diff = launchDate - now;
+
+    if (diff <= 0) {
+      countdown.innerText = "🚀 Launch completed!";
+      return;
+    }
+
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    const secs = Math.floor((diff % (1000 * 60)) / 1000);
+
+    countdown.innerText = `${days}d ${hours}h ${mins}m ${secs}s`;
+  }
+
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+</script>
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "DeltaV – CanSat Team 2025/26",
+  "url": "https://www.deltav-team.de",
+  "logo": "https://www.deltav-team.de/images/deltav.png",
+  "sameAs": [
+    "https://www.instagram.com/delta_v_team/",
+    "https://www.tiktok.com/@delta_v_team"
+  ]
+}
+</script>
+
+<!-- existing main.js (if present) -->
 <script src="js/main.js"></script>
 </body>
 </html>
