@@ -1,0 +1,9 @@
+# robots.txt für DeltaV CanSat Team 2025/26
+
+User-agent: *
+Disallow: /css/
+Disallow: /js/
+Disallow: /images/
+Allow: /
+
+Sitemap: https://www.deltav-team.de/sitemap.xml
