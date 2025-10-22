@@ -2,21 +2,17 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>DeltaV – CanSat Team 2025/26 | Schülerprojekt Minisatellit, Raumfahrt Mecklenburg-Vorpommern</title>
-
-  <!-- SEO (leicht verbessert, aber unsichtbar) -->
-  <meta name="description" content="DeltaV ist ein engagiertes Schülerteam der Europäischen Gesamtschule Insel Usedom in Mecklenburg-Vorpommern. Wir entwickeln einen Mini-Satelliten für den Deutschen CanSat-Wettbewerb 2025/26 und erforschen die Atmosphäre.">
+  <title>DeltaV – CanSat Team 2025/26</title>
+  <meta name="description" content="DeltaV is a student team from the European Comprehensive School on the island of Usedom and is participating in the 2025/26 German CanSat competition. We are developing a mini-satellite and researching the atmosphere.">
   <meta name="keywords" content="DeltaV, CanSat, Schülerprojekt, Minisatellit, Raumfahrt, Europäische Gesamtschule Insel Usedom, Wettbewerb 2025">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="canonical" href="https://www.deltav-team.de/">
 
-  <!-- Open Graph -->
+  <!-- Open Graph für Social Media -->
   <meta property="og:title" content="DeltaV – CanSat Team 2025/26">
   <meta property="og:description" content="The DeltaV team is participating in the German CanSat competition. Learn all about our mission here.">
   <meta property="og:image" content="https://www.deltav-team.de/images/deltav.jpg">
   <meta property="og:url" content="https://www.deltav-team.de">
   <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary_large_image">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="images/favicon.png">
@@ -24,22 +20,18 @@
   <link rel="stylesheet" href="css/style.css">
 
   <style>
-    /* --- Fonts baseline (keine Designänderung) --- */
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap');
-
+    
     body {
       font-family: 'Roboto', sans-serif;
       color: #333333;
       line-height: 1.6;
-      margin: 0;
     }
-
-    h1,h2,h3,h4,h5,h6 {
+    
+    h1, h2, h3, h4, h5, h6 {
       font-family: 'Montserrat', sans-serif;
       font-weight: 600;
     }
-
-    /* --- Kopie eures Original-CSS (Design unverändert) --- */
 
     .hero {
       background: #0a192f;
@@ -66,7 +58,7 @@
     .hero img {
       border-radius: 8px;
       box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-      max-width: 100%;
+       max-width: 100%;
       height: auto;
     }
 
@@ -202,33 +194,8 @@
       .countdown-section h2 { font-size: 1.5em; }
       #countdown { font-size: 2em; }
       .sponsor-cards { grid-template-columns: 1fr; }
+    
     }
-
-    /* Announcement Banner (wie gewünscht, dezent) */
-    .announcement {
-      background: linear-gradient(90deg, #06b6d4, #f97316);
-      color: white;
-      text-align: center;
-      padding: 15px 10px;
-      font-size: 1.2em;
-      font-weight: 500;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-      border-radius: 8px;
-      margin: 0 auto 30px auto;
-      max-width: 1000px;
-    }
-
-    /* Social icon hover (Footer) */
-    .social-icon {
-      height: 32px;
-      width: auto;
-      transition: transform 0.3s ease, filter 0.3s ease;
-    }
-    .social-icon:hover {
-      transform: scale(1.2);
-      filter: brightness(1.4);
-    }
-
   </style>
 </head>
 <body>
@@ -263,9 +230,8 @@
       🚀 DeltaV – CanSat Team 2025/26
     </h1>
     <div style="display:flex; justify-content:center; gap:30px; flex-wrap:wrap; margin-bottom: 25px;">
-      <!-- Header-Logos in Original-Proportion (wie vorher) -->
-      <img src="images/logo.png" alt="CanSat Logo" style="height:80px; border-radius:6px; box-shadow:0 2px 8px rgba(0,0,0,0.2);" loading="lazy">
-      <img src="images/deltav.png" alt="DeltaV Logo" style="height:80px; border-radius:6px; box-shadow:0 2px 8px rgba(0,0,0,0.2);" loading="lazy">
+      <img src="images/logo.png" alt="CanSat Logo" style="height:80px; border-radius:6px; box-shadow:0 2px 8px rgba(0,0,0,0.2);">
+      <img src="images/deltav.png" alt="DeltaV Logo" style="height:80px; border-radius:6px; box-shadow:0 2px 8px rgba(0,0,0,0.2);">
     </div>
   </div>
 
@@ -284,7 +250,22 @@
   </nav>
 </header>
 
+<style>
+  nav a:hover {
+    background: #f97316 !important;
+    color: white !important;
+    transform: translateY(-1px);
+  }
+  
+  @media (max-width: 768px) {
+    header h1 { font-size: 2em !important; }
+    nav ul { flex-direction: column; align-items: center; }
+    nav a { margin: 5px 0; }
+  }
+</style>
+
 <main>
+
   <section class="countdown-section">
     <h2>Voraussichtlicher Countdown bis zum Raketenstart</h2>
     <p id="countdown">Wird geladen...</p>
@@ -293,16 +274,15 @@
 
   <section class="hero">
     <h2>Willkommen bei unserem CanSat-Projekt</h2>
-    <p> Wir sind das DeltaV-Team, ein engagiertes Schülerteam der Europäischen Gesamtschule Insel Usedom. Wir wurden <strong>offiziell für den Deutschen CanSat-Wettbewerb 2025/26 angenommen</strong> und entwickeln nun einen Minisatelliten, der während des Raketenflugs Messdaten sammelt und an die Bodenstation überträgt. Mehr über unser <a href="progress.html">Projektfortschritt</a> oder unser <a href="team.html">Team</a> erfahren.</p>
-    <!-- Gruppenbild mit originalem Verhalten (keine Verzerrung) -->
-    <img src="images/gruppenbild.JPEG" alt="Teamfoto unseres CanSat-Projekts" loading="lazy" style="max-width:100%; height:auto; border-radius:8px;">
+    <p>Wir sind das DeltaV-Team, ein engagiertes Schülerteam, das im Rahmen des Deutschen CanSat-Wettbewerbs 2025/26 einen Minisatelliten baut und starten wird.</p>
+    <img src="images/gruppenbild.JPEG" alt="Teamfoto unseres CanSat-Projekts">
   </section>
 
-  <section class="info">
-    <h3>Worum geht es?</h3>
-    <p>Ein CanSat ist ein Miniatursatellit in der Größe einer Getränkedose. Unsere Mission: Messdaten sammeln, per Funk übertragen und ein eigenes wissenschaftliches Experiment durchführen – Raumfahrttechnik im Kleinformat.</p>
-    <p><strong>Wir sind das einzige Team aus Mecklenburg-Vorpommern</strong>, dass am Deutschen CanSat-Wettbewerb 2025/26 teilnimmt und wir möchten zeigen, dass Raumfahrt auch von der Ostseeküste aus möglich ist! 🌍🚀</p>
-  </section>
+<section class="info">
+  <h3>Worum geht es?</h3>
+  <p>Ein CanSat ist ein Miniatursatellit in der Größe einer Getränkedose. Unsere Mission: Messdaten sammeln, per Funk übertragen und ein eigenes wissenschaftliches Experiment durchführen – Raumfahrttechnik im Kleinformat.</p>
+  <p><strong>Wir sind eines der wenigen Teams aus Mecklenburg-Vorpommern</strong>, die sich für den Deutschen CanSat-Wettbewerb 2025/26 beworben haben – und möchten zeigen, dass Raumfahrt auch von der Ostseeküste aus möglich ist! 🌍🚀</p>
+</section>
 
   <section class="sponsoring-teaser">
     <h3>🚀 Unterstützen Sie unser Projekt!</h3>
@@ -311,6 +291,33 @@
       💡 Mehr erfahren & Partner werden
     </a>
   </section>
+
+<section style="background:#f8f9fa; padding:40px 30px; border-radius:8px; margin:30px 0; box-shadow:0 2px 10px rgba(0,0,0,0.05);">
+  <h3 style="text-align:center; color:#0a192f; font-family:'Montserrat',sans-serif;">📩 Kontakt aufnehmen</h3>
+  <p style="text-align:center; color:#333; max-width:600px; margin:10px auto 30px;">
+    Haben Sie Fragen, Ideen oder möchten unser Projekt unterstützen? Schreiben Sie uns – wir melden uns schnellstmöglich!
+  </p>
+
+  <form action="https://formspree.io/f/manpgqwl" method="POST" style="max-width:600px; margin:0 auto;">
+    <label for="name" style="display:block; margin-bottom:5px; font-weight:600;">Name:</label>
+    <input type="text" id="name" name="name" required style="width:100%; padding:10px; border:1px solid #ccc; border-radius:6px; margin-bottom:15px;">
+
+    <label for="email" style="display:block; margin-bottom:5px; font-weight:600;">E-Mail:</label>
+    <input type="email" id="email" name="email" required style="width:100%; padding:10px; border:1px solid #ccc; border-radius:6px; margin-bottom:15px;">
+
+    <label for="message" style="display:block; margin-bottom:5px; font-weight:600;">Nachricht:</label>
+    <textarea id="message" name="message" rows="5" required style="width:100%; padding:10px; border:1px solid #ccc; border-radius:6px; margin-bottom:20px;"></textarea>
+
+    <button type="submit" style="display:block; width:100%; background:#f97316; color:white; border:none; padding:15px; border-radius:6px; font-size:1em; font-weight:600; cursor:pointer; transition:0.3s;">
+      📨 Nachricht senden
+    </button>
+  </form>
+
+  <p style="font-size:0.8em; color:#555; text-align:center; margin-top:15px;">
+    Mit dem Absenden stimmen Sie zu, dass Ihre Angaben zur Kontaktaufnahme verwendet werden.
+  </p>
+</section>
+
 </main>
 
 <footer style="background: #0a192f; color: #cccccc; padding: 40px 20px; margin-top: 50px;">
@@ -333,20 +340,20 @@
         </ul>
       </div>
 
-      <!-- Mitte: Sponsoren (wie ursprünglich) -->
+      <!-- Mitte: Sponsoren -->
       <div style="text-align: center;">
         <h4 style="color: white; margin-bottom: 15px; font-family: 'Montserrat', sans-serif;">Unsere Partner</h4>
         <a href="https://www.check1avergleichsportal.de/" target="_blank">
-          <img src="images/check1a-logo.png" alt="Check1A GmbH Logo" style="max-height: 180px; height: auto; margin: 10px;" loading="lazy">
+          <img src="images/check1a-logo.png" alt="Check1A GmbH Logo" style="max-height: 180px; height: auto; margin: 10px;">
         </a>
         <a href="http://www.lipinski-dzwigi.pl/" target="_blank">
-          <img src="images/Zakladdzwigowy.png" alt="Lipiński Dźwigi" style="max-height: 180px; height: auto; margin: 10px;" loading="lazy">
+          <img src="images/Zakladdzwigowy.png" alt="Lipiński Dźwigi" style="max-height: 180px; height: auto; margin: 10px;">
         </a>
         <a href="https://www.werbeagentur-nickel.de/" target="_blank">
-          <img src="images/WerbeagenturMarkoNickel_Logo.jpg" alt="Werbeagentur Marko Nickel Logo" style="max-height: 180px; height: auto; margin: 10px;" loading="lazy">
+          <img src="images/WerbeagenturMarkoNickel_Logo.jpg" alt="Werbeagentur Marko Nickel Logo" style="max-height: 180px; height: auto; margin: 10px;">
         </a>
         <a href="https://www.dlr.de/de/das-dlr/standorte-und-bueros/neustrelitz" target="_blank">
-          <img src="images/DLR logo.jpg" alt="DLR Neustrelitz Logo" style="max-height: 180px; height: auto; margin: 10px;" loading="lazy">
+          <img src="images/DLR logo.jpg" alt="DLR Neustrelitz Logo" style="max-height: 180px; height: auto; margin: 10px;">
         </a>
       </div>
 
@@ -355,13 +362,13 @@
         <h4 style="color: white; margin-bottom: 15px; font-family: 'Montserrat', sans-serif;">Folgen Sie uns</h4>
         <div style="display: flex; justify-content: center; gap: 25px; margin-bottom: 15px; align-items: center;">
           <a href="https://www.instagram.com/delta_v_team/" target="_blank" title="Instagram" style="text-decoration: none;">
-            <img src="images/instagram_icon(1).png" alt="Instagram" class="social-icon" loading="lazy">
+            <img src="images/instagram_icon(1).png" alt="Instagram" class="social-icon">
           </a>
           <a href="https://www.tiktok.com/@delta_v_team" target="_blank" title="TikTok" style="text-decoration: none;">
-            <img src="images/tiktok_icon.png" alt="TikTok" class="social-icon" loading="lazy">
+            <img src="images/tiktok_icon.png" alt="TikTok" class="social-icon">
           </a>
           <a href="mailto:info@deltav-team.de" title="E-Mail" style="text-decoration: none;">
-            <img src="images/Mail-icon.png" alt="E-Mail" class="social-icon" loading="lazy">
+            <img src="images/Mail-icon.png" alt="E-Mail" class="social-icon">
           </a>
         </div>
         <p style="margin: 0; font-size: 0.9em; color: #999;">info@deltav-team.de</p>
@@ -375,7 +382,7 @@
   </div>
 </footer>
 
-<!-- Hover-Effekt für Social Icons (wie vorher) -->
+<!-- Hover-Effekt für Social Icons -->
 <style>
   .social-icon {
     height: 32px;
@@ -388,49 +395,6 @@
   }
 </style>
 
-<!-- Countdown Script (wie vorher) -->
-<script>
-  const countdown = document.getElementById("countdown");
-  // Setze ein realistisches Datum — du kannst das anpassen
-  const launchDate = new Date("2026-03-20T09:00:00").getTime();
-
-  function updateCountdown() {
-    const now = new Date().getTime();
-    const diff = launchDate - now;
-
-    if (diff <= 0) {
-      countdown.innerText = "🚀 Start erfolgt!";
-      return;
-    }
-
-    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-    const secs = Math.floor((diff % (1000 * 60)) / 1000);
-
-    countdown.innerText = `${days}T ${hours}h ${mins}m ${secs}s`;
-  }
-
-  updateCountdown();
-  setInterval(updateCountdown, 1000);
-</script>
-
-<!-- Structured Data -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "DeltaV – CanSat Team 2025/26",
-  "url": "https://www.deltav-team.de",
-  "logo": "https://www.deltav-team.de/images/deltav.png",
-  "sameAs": [
-    "https://www.instagram.com/delta_v_team/",
-    "https://www.tiktok.com/@delta_v_team"
-  ]
-}
-</script>
-
-<!-- Dein bestehendes main.js (falls vorhanden) -->
 <script src="js/main.js"></script>
 </body>
 </html>
