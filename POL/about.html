@@ -238,57 +238,148 @@
     </div>
 </main>
 
-<footer style="background: #0a192f; color: #cccccc; padding: 40px 20px; margin-top: 50px;">
-  <div style="max-width: 1200px; margin: 0 auto;">
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-bottom: 30px;">
-      
-      <!-- Lewa strona: Informacje prawne -->
-      <div>
-        <h4 style="color: white; margin-bottom: 15px; font-family: 'Montserrat', sans-serif;">Informacje prawne</h4>
-        <ul style="list-style: none; padding: 0; margin: 0;">
-          <li style="margin-bottom: 8px;"><a href="rechtliches.html" style="color: #cccccc; text-decoration: none; transition: color 0.3s ease;">Impressum</a></li>
-          <li style="margin-bottom: 8px;"><a href="rechtliches.html" style="color: #cccccc; text-decoration: none; transition: color 0.3s ease;">Ochrona danych</a></li>
-          <li style="margin-bottom: 8px;"><a href="contact.html" style="color: #cccccc; text-decoration: none; transition: color 0.3s ease;">Kontakt</a></li>
+<footer style="background:#0a192f;color:#cccccc;padding:40px 20px;margin-top:50px;">
+  <style>
+    .footer-inner { max-width:1200px; margin:0 auto; }
+    .footer-grid {
+      display:grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap:32px;
+      align-items:start;
+    }
+    .footer-section h4 {
+      color:#fff;
+      margin-bottom:12px;
+      font-family:'Montserrat',sans-serif;
+    }
+    .footer-section ul { list-style:none; padding:0; margin:0; }
+    .footer-section a { color:#cccccc; text-decoration:none; transition:color .2s; }
+    .footer-section a:hover { color:#f97316; }
+
+    .sponsor-grid {
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      align-items:center;
+      gap:18px;
+      margin-top:6px;
+    }
+    .sponsor-item {
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:6px;
+      background:transparent;
+      border-radius:6px;
+      max-width:180px;
+      width: 100%;
+      box-sizing:border-box;
+    }
+    .sponsor-item img {
+      width:100%;
+      height:auto;
+      display:block;
+      object-fit:contain;
+      max-height:110px;
+    }
+
+    .social-wrapper { display:flex; gap:18px; align-items:center; justify-content:flex-start; }
+    .social-wrapper a img { width:32px; height:auto; display:block; transition:transform .15s; }
+    .social-wrapper a:hover img { transform:scale(1.15); }
+
+    .footer-bottom { border-top:1px solid rgba(255,255,255,0.08); padding-top:18px; text-align:center; margin-top:18px; color:#999; font-size:0.9rem; }
+
+    @media (max-width: 900px) {
+      .footer-grid { grid-template-columns: 1fr; text-align:center; }
+      .social-wrapper { justify-content:center; }
+      .sponsor-item { max-width:160px; }
+      .sponsor-item img { max-height:100px; }
+
+      .footer-section { text-align: center !important; }
+      .footer-section ul { text-align:center !important; }
+      .social-wrapper { justify-content:center !important; }
+    }
+  </style>
+
+  <div class="footer-inner">
+    <div class="footer-grid">
+
+      <!-- Links: Informacje prawne -->
+      <div class="footer-section" style="text-align:left;">
+        <h4>Informacje prawne</h4>
+        <ul>
+          <li style="margin-bottom:8px;"><a href="rechtliches.html">Impressum</a></li>
+          <li style="margin-bottom:8px;"><a href="rechtliches.html">Prywatność</a></li>
+          <li style="margin-bottom:8px;"><a href="contact.html">Kontakt</a></li>
         </ul>
       </div>
-      
-      <!-- Środek: Sponsorzy -->
-      <div style="text-align: center;">
-        <h4 style="color: white; margin-bottom: 15px; font-family: 'Montserrat', sans-serif;">Nasi partnerzy</h4>
-        <a href="https://www.check1avergleichsportal.de/" target="_blank">
-          <img src="images/check1a-logo.png" alt="Check1A GmbH Logo" style="max-height: 180px; height: auto; margin: 10px;">
-        </a>
-        <a href="http://www.lipinski-dzwigi.pl/" target="_blank">
-          <img src="images/Zakladdzwigowy.png" alt="Lipiński Dźwigi" style="max-height: 180px; height: auto; margin: 10px;">
-        </a>
-        <a href="https://www.werbeagentur-nickel.de/" target="_blank">
-          <img src="images/WerbeagenturMarkoNickel_Logo.jpg" alt="Werbeagentur Marko Nickel Logo" style="max-height: 180px; height: auto; margin: 10px;">
-        </a>
-        <a href="https://www.dlr.de/de/das-dlr/standorte-und-bueros/neustrelitz" target="_blank">
-          <img src="images/DLR logo.jpg" alt="DLR Neustrelitz Logo" style="max-height: 180px; height: auto; margin: 10px;">
-        </a>
+
+      <!-- Middle: Sponsors -->
+      <div class="footer-section" style="text-align:center;">
+        <h4>Nasi Partnerzy</h4>
+
+        <div class="sponsor-grid" aria-hidden="false">
+          <div class="sponsor-item">
+            <a href="https://www.check1avergleichsportal.de/" target="_blank" rel="noopener">
+              <img src="images/check1a-logo.png" alt="Check1A GmbH Logo">
+            </a>
+          </div>
+
+          <div class="sponsor-item">
+            <a href="http://www.lipinski-dzwigi.pl/" target="_blank" rel="noopener">
+              <img src="images/Zakladdzwigowy.png" alt="Lipiński Dźwigi Logo">
+            </a>
+          </div>
+
+          <div class="sponsor-item">
+            <a href="https://www.werbeagentur-nickel.de/" target="_blank" rel="noopener">
+              <img src="images/WerbeagenturMarkoNickel_Logo.jpg" alt="Agencja Reklamowa Marko Nickel Logo">
+            </a>
+          </div>
+
+          <div class="sponsor-item">
+            <a href="https://www.dlr.de/de/das-dlr/standorte-und-bueros/neustrelitz" target="_blank" rel="noopener">
+              <img src="images/DLR logo.jpg" alt="DLR Neustrelitz Logo">
+            </a>
+          </div>
+
+          <div class="sponsor-item">
+            <a href="https://hangar10.de/" target="_blank" rel="noopener">
+              <img src="images/logo-hangar10.jpg" alt="Hangar10 Logo">
+            </a>
+          </div>
+
+          <div class="sponsor-item">
+            <a href="https://www.hochschule-stralsund.de/" target="_blank" rel="noopener">
+              <img src="images/Hochschule_Stralsund_logo.jpg" alt="Uniwersytet Stralsund Logo">
+            </a>
+          </div>
+        </div>
       </div>
-      
-      <!-- Prawa strona: Social Media z ikonami -->
-      <div style="text-align: center;">
-        <h4 style="color: white; margin-bottom: 15px; font-family: 'Montserrat', sans-serif;">Obserwuj nas</h4>
-        <div style="display: flex; justify-content: center; gap: 25px; margin-bottom: 15px; align-items: center;">
-          <a href="https://www.instagram.com/delta_v_team/" target="_blank" title="Instagram" style="text-decoration: none;">
-            <img src="images/instagram_icon(1).png" alt="Instagram" class="social-icon">
+
+      <!-- Right: Social -->
+      <div class="footer-section" style="text-align:left;">
+        <h4>Śledź nas</h4>
+
+        <div class="social-wrapper" style="margin-bottom:12px;">
+          <a href="https://www.instagram.com/delta_v_team/" target="_blank" rel="noopener" aria-label="Instagram">
+            <img src="images/instagram_icon(1).png" alt="Instagram">
           </a>
-          <a href="https://www.tiktok.com/@delta_v_team" target="_blank" title="TikTok" style="text-decoration: none;">
-            <img src="images/tiktok_icon.png" alt="TikTok" class="social-icon">
+          <a href="https://www.tiktok.com/@delta_v_team" target="_blank" rel="noopener" aria-label="TikTok">
+            <img src="images/tiktok_icon.png" alt="TikTok">
           </a>
-          <a href="mailto:info@deltav-team.de" title="E-Mail" style="text-decoration: none;">
-            <img src="images/Mail-icon.png" alt="E-Mail" class="social-icon">
+          <a href="mailto:info@deltav-team.de" aria-label="E-Mail">
+            <img src="images/Mail-icon.png" alt="E-mail">
           </a>
         </div>
-        <p style="margin: 0; font-size: 0.9em; color: #999;">info@deltav-team.de</p>
+
+        <p style="margin:0;color:#999;">info@deltav-team.de</p>
       </div>
+
     </div>
-    
-    <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; text-align: center;">
-      <p style="margin: 0; color: #999; font-size: 0.9em;">© 2025 DeltaV CanSat Team. Wszelkie prawa zastrzeżone.</p>
+
+    <div class="footer-bottom">
+      <p style="margin:0;">© 2025 DeltaV CanSat Team. Wszelkie prawa zastrzeżone.</p>
     </div>
   </div>
 </footer>
@@ -326,4 +417,5 @@
 <script src="js/main.js"></script>
 </body>
 </html>
+
 
