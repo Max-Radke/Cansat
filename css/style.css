@@ -182,4 +182,57 @@ footer:hover {
   vertical-align: middle;
 }
 
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+}
 
+.team-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 28px rgba(0,0,0,0.15);
+}
+
+.team-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.team-info h3 {
+  margin: 0;
+  font-size: 1.4em;
+}
+
+.team-role {
+  color: #f97316;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 600px) {
+
+  .team-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .team-photo {
+    width: 110px;
+    height: 110px;
+  }
+
+}
