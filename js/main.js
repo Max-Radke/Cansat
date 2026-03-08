@@ -1,15 +1,32 @@
-// Countdown bis zum 03.03.2026 mit Raketenanimation
-function updateCountdown() {
-    const countdownElement = document.getElementById("countdown");
-    const rocketElement = document.getElementById("rocket");
-    const launchDate = new Date("2026-03-11T12:00:00").getTime();
-    const now = new Date().getTime();
+// main.js - robuster Countdown (ersetze komplett)
+
+document.addEventListener('DOMContentLoaded', function () {
+  const countdownElement = document.getElementById('countdown');
+  const rocketElement = document.getElementById('rocket');
+
+  if (!countdownElement) {
+    console.warn('Countdown: Element mit id="countdown" nicht gefunden.');
+    return; // abbrechen – kein Element zum Anzeigen
+  }
+
+  // Startdatum / Uhrzeit (UTC/local je nach Browser)
+  const launchDate = new Date('2026-03-11T12:00:00').getTime();
+
+  let intervalId = null;
+
+  function updateCountdown() {
+    const now = Date.now();
     const distance = launchDate - now;
 
-    if (distance < 0) {
-        countdownElement.innerText = "🚀 Der Start ist erfolgt!";
-        rocketElement.classList.add("launch");
-        return;
+    if (distance <= 0) {
+      // Start erfolgt
+      countdownElement.innerText = '🚀 Der Start ist erfolgt!';
+      if (rocketElement) rocketElement.classList.add('launch');
+      if (intervalId) {
+        clearInterval(intervalId);
+        intervalId = null;
+      }
+      return;
     }
 
     const days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -17,9 +34,11 @@ function updateCountdown() {
     const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
+    // Template literal mit Backticks (wichtig)
     countdownElement.innerText = `${days}d ${hours}h ${minutes}m ${seconds}s`;
-}
+  }
 
-setInterval(updateCountdown, 1000);
-updateCountdown();
-
+  // Erstaufruf (sorgt für sofortige Anzeige) und dann Intervall
+  updateCountdown();
+  intervalId = setInterval(updateCountdown, 1000);
+});
