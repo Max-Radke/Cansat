@@ -1,8 +1,8 @@
-/* ----------------- Basis / Fixes ----------------- */
+/* ----------------- Basis / Fixes (aktualisiert) ----------------- */
 /* Verhindert horizontales Swipen auf Mobilgeräten */
 html, body {
   max-width: 100%;
-  overflow-x: hidden;
+  overflow-x: hidden;                /* wichtig: kein horizontales Swipen */
   -webkit-overflow-scrolling: touch;
   margin: 0;
   padding: 0;
@@ -18,6 +18,8 @@ body {
   background-color: #f4f4f4;
   color: #333;
   line-height: 1.45;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* ----------------- Header / Navigation ----------------- */
@@ -29,7 +31,7 @@ header {
   transition: box-shadow 0.4s ease;
   background-size: cover;
   background-position: center;
-  /* wichtig: verhindert fixed-background-popup auf mobilen Browsern */
+  /* verhindert das "fixed background" Verhalten auf mobilen Browsern */
   background-attachment: scroll;
   overflow-x: hidden;
 }
@@ -52,14 +54,14 @@ nav a {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  transition: 0.3s;
+  transition: transform 0.18s ease, background 0.18s ease;
   display: inline-block;
   padding: 6px 12px;
   border-radius: 8px;
   background: rgba(0,0,0,0.15);
 }
 
-nav a:hover { text-decoration: underline; transform: translateY(-2px); }
+nav a:hover { text-decoration: none; transform: translateY(-2px); }
 
 /* ----------------- Main / Hero / Info ----------------- */
 main {
@@ -69,7 +71,7 @@ main {
   background-color: white;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   border-radius: 10px;
-  overflow-x: hidden;
+  overflow-x: hidden;  /* sorgt dafür, dass Inhalt nicht horizontal ausbricht */
 }
 
 .hero {
@@ -99,8 +101,21 @@ main {
   overflow-x: hidden;
 }
 
-#countdown { font-size: 2rem; font-weight: bold; color: #003366; margin: 1rem 0; }
-#rocket { font-size: 3rem; transition: transform 2s ease-in-out; display: inline-block; }
+#countdown {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #003366;
+  margin: 1rem 0;
+  word-break: keep-all;      /* verhindert unerwünschten Zeilenumbruch */
+  white-space: nowrap;       /* zählt als "single-line", falls Platz da ist */
+}
+
+#rocket {
+  font-size: 3rem;
+  transition: transform 2s ease-in-out;
+  display: inline-block;
+}
+
 .launch { animation: fly 2s forwards; }
 
 @keyframes fly {
@@ -134,48 +149,81 @@ main {
 .gallery img:hover { transform: scale(1.02); }
 
 /* ----------------- Social Icons ----------------- */
-.social-icons a { margin: 0 8px; text-decoration: none; font-size: 24px; display:inline-block; }
-.social-icons img { height: 40px; width: 40px; vertical-align: middle; max-width:100%; }
-
-/* ----------------- Team Grid / Cards ----------------- */
-.team-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* 250 statt 350 für bessere mobile Darstellung */
-  gap: 30px;
+.social-icons a {
+  margin: 0 8px;
+  text-decoration: none;
+  font-size: 24px;
+  display: inline-block;
+}
+.social-icons img {
+  height: 40px;
+  width: 40px;
+  vertical-align: middle;
+  max-width: 100%;
 }
 
+/* ----------------- Team Grid / Cards (NEU: Bilder immer zentriert) ----------------- */
+/* Grid: flexible Spalten, Karten bleiben konsistent */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  align-items: start;
+}
+
+/* Karten: VERTIKALES Layout für alle Geräte -> Bild sitzt immer oben mittig */
 .team-card {
   display: flex;
+  flex-direction: column;         /* wichtig: Bild über Text, zentriert */
   align-items: center;
-  gap: 20px;
+  text-align: center;
+  gap: 18px;
   background: #ffffff;
-  padding: 20px;
+  padding: 25px;
   border-radius: 12px;
   box-shadow: 0 4px 18px rgba(0,0,0,0.08);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
   overflow: hidden;
+  min-height: 260px;
 }
 
+/* Hover-Effekt */
 .team-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 10px 28px rgba(0,0,0,0.15);
 }
 
+/* Bild: immer zentriert, fixierte Größe */
 .team-photo {
   width: 120px;
   height: 120px;
   border-radius: 50%;
   object-fit: cover;
-  flex-shrink: 0;
   background: #f0f0f0;
+  display: block;
+  margin: 0 auto;                 /* zentriert zuverlässig */
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+/* Falls die Bilder in HTML als <img> in einem Container sind */
+.team-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
   display: block;
 }
 
-/* falls die Bilder nicht genau gleich sind: erzwinge Größe */
-.team-photo img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; display:block; }
+/* Text-Bereich innerhalb der Karte (volle Breite) */
+.team-info {
+  width: 100%;
+  display: block;
+}
 
-.team-info h3 { margin: 0; font-size: 1.2em; }
-.team-role { color: #f97316; font-weight: 500; margin-bottom: 6px; }
+.team-info h3 { margin: 0 0 6px; font-size: 1.4em; color: #0a192f; }
+.team-role { color: #f97316; font-weight: 500; margin-bottom: 8px; }
+.team-info p { color: #555; margin: 0; line-height: 1.5; }
 
 /* ----------------- Footer ----------------- */
 footer {
@@ -193,14 +241,15 @@ footer:hover { box-shadow: 0 4px 30px #00000066; }
 footer img { max-width: 100%; height: auto; display: block; }
 
 /* Sponsor images Skalierung */
-.sponsor-item img { max-width: 100%; height: auto; display:block; object-fit:contain; }
+.sponsor-item img { max-width: 100%; height: auto; display: block; object-fit: contain; }
 
-/* ----------------- Timeline / Fortschritt (mobile-stabil) ----------------- */
+/* ----------------- Timeline / Fortschritt (mobil-stabil) ----------------- */
 .timeline {
   position: relative;
   max-width: 900px;
   margin: 0 auto;
   padding: 20px 0;
+  overflow-x: hidden;
 }
 
 .timeline::after {
@@ -268,60 +317,21 @@ footer img { max-width: 100%; height: auto; display: block; }
   .team-photo { width: 110px; height: 110px; }
 }
 
-/* Kleinere Bildschirme */
+/* Kleinere Bildschirme: noch kompakter */
 @media (max-width: 768px) {
   nav ul { flex-direction: column; align-items: center; }
   main { padding: 1rem; margin: 1rem; }
   header h1 { font-size: 1.8rem; }
   nav a { font-size: 1rem; }
-  .team-card { flex-direction: column; text-align: center; }
-  .team-info h3 { font-size: 1.05rem; }
+
+  /* Karten-Layout: bereits column - nur hier die Maße anpassen */
+  .team-card { padding: 20px; gap: 12px; min-height: auto; }
+  .team-info h3 { font-size: 1.1rem; }
+  .team-role { font-size: 0.95rem; }
 }
 
-/* --- Team: mobile zentrieren (fix für linksbündige Fotos) --- */
-.team-card {
-  /* behalte Desktop-Layout unverändert */
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  background: #ffffff;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 18px rgba(0,0,0,0.08);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-  overflow: hidden;
-}
-
-/* Erzwinge, dass das Bild zentriert wird, falls die Karte in Spalten-Modus ist */
-.team-photo {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  object-fit: cover;
-  flex-shrink: 0;
-  background: #f0f0f0;
-  display: block;
-  margin: 0;               /* default */
-}
-
-/* Mobile: Karte wird Spalte und alles zentriert */
-@media (max-width: 768px) {
-  .team-card {
-    flex-direction: column !important;
-    align-items: center !important;
-    text-align: center !important;
-    padding: 22px 18px;
-  }
-
-  /* Bild mittig in der Karte */
-  .team-photo {
-    margin: 0 auto 12px auto; /* oben 0, unten Abstand zu Namen */
-    width: 110px;
-    height: 110px;
-  }
-
-  /* Team-Text auf volle Breite, so geht nichts mehr links raus */
-  .team-info {
-    width: 100%;
-  }
+/* Extra: kleine Fallbacks für sehr breite Bildschirme */
+@media (min-width: 1400px) {
+  main { max-width: 1200px; }
+  .team-card { padding: 30px; }
 }
