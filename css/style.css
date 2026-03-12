@@ -92,6 +92,11 @@ main {
 
 /* ----------------- Countdown / Rocket ----------------- */
 .countdown-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   text-align: center;
   background-color: #e6f2ff;
   padding: 2rem;
@@ -99,15 +104,6 @@ main {
   margin-bottom: 2rem;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   overflow-x: hidden;
-}
-
-.countdown-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 300px; /* oder deine aktuelle Höhe */
-  flex-direction: column;
 }
 
 #countdown {
