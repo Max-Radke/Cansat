@@ -111,8 +111,7 @@ main {
   font-weight: bold;
   color: #003366;
   margin: 1rem 0;
-  word-break: keep-all;      /* verhindert unerwünschten Zeilenumbruch */
-  white-space: nowrap;       /* zählt als "single-line", falls Platz da ist */
+  text-align: center;
 }
 
 #rocket {
