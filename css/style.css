@@ -101,6 +101,15 @@ main {
   overflow-x: hidden;
 }
 
+.countdown-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 300px; /* oder deine aktuelle Höhe */
+  flex-direction: column;
+}
+
 #countdown {
   font-size: 2rem;
   font-weight: bold;
